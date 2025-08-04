@@ -6,9 +6,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/caiatech/caia-library/internal/git"
-	"github.com/caiatech/caia-library/internal/temporal/workflows"
-	"github.com/caiatech/caia-library/pkg/document"
+	"github.com/Caia-Tech/caia-library/internal/git"
+	"github.com/Caia-Tech/caia-library/internal/temporal/workflows"
+	"github.com/Caia-Tech/caia-library/pkg/document"
 	"github.com/google/uuid"
 	"go.temporal.io/sdk/activity"
 )

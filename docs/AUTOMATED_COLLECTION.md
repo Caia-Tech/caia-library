@@ -2,7 +2,7 @@
 
 ## Overview
 
-This guide details how to build automated, intelligent data collection pipelines with CAIA Library, ensuring cryptographic provenance for every document.
+This guide details how to build automated, intelligent data collection pipelines with Caia Library, ensuring cryptographic provenance for every document.
 
 ## Architecture
 
@@ -509,4 +509,4 @@ func SetupNewsAggregationPipeline() {
 
 ## Conclusion
 
-With these automated collection patterns, CAIA Library becomes a self-sustaining knowledge repository that grows intelligently while maintaining perfect provenance for every document. The combination of Temporal's reliability and Git's immutability creates an unstoppable data collection machine.
+With these automated collection patterns, Caia Library becomes a self-sustaining knowledge repository that grows intelligently while maintaining perfect provenance for every document. The combination of Temporal's reliability and Git's immutability creates an unstoppable data collection machine.

@@ -1,4 +1,4 @@
-# CAIA Library Quick Start Guide
+# Caia Library Quick Start Guide
 
 ## Prerequisites
 
@@ -26,14 +26,14 @@ mkdir -p /tmp/caia-library-repo
 cd /tmp/caia-library-repo
 git init --initial-branch=main
 git config user.email "library@caiatech.com"
-git config user.name "CAIA Library"
+git config user.name "Caia Library"
 echo "# Document Repository" > README.md
 git add . && git commit -m "Initial commit"
 ```
 
-4. **Start CAIA Library server:**
+4. **Start Caia Library server:**
 ```bash
-export CAIA_REPO_PATH=/tmp/caia-library-repo
+export Caia_REPO_PATH=/tmp/caia-library-repo
 export PORT=8080
 ./caia-server
 ```

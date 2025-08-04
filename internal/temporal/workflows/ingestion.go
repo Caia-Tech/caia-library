@@ -1,8 +1,11 @@
 package workflows
 
 import (
+	"fmt"
+	"strings"
 	"time"
 
+	"go.temporal.io/sdk/temporal"
 	"go.temporal.io/sdk/workflow"
 )
 
@@ -17,7 +20,14 @@ func DocumentIngestionWorkflow(ctx workflow.Context, input DocumentInput) error 
 	logger.Info("Starting document ingestion", "url", input.URL)
 
 	ao := workflow.ActivityOptions{
-		StartToCloseTimeout: 10 * time.Minute,
+		StartToCloseTimeout: 5 * time.Minute,
+		RetryPolicy: &temporal.RetryPolicy{
+			MaximumAttempts:        3,
+			InitialInterval:        1 * time.Second,
+			BackoffCoefficient:     2.0,
+			MaximumInterval:        30 * time.Second,
+			NonRetryableErrorTypes: []string{"InvalidInputError", "PDFProcessingError", "*extractor.PDFProcessingError"},
+		},
 	}
 	ctx = workflow.WithActivityOptions(ctx, ao)
 
@@ -25,6 +35,12 @@ func DocumentIngestionWorkflow(ctx workflow.Context, input DocumentInput) error 
 	var fetchResult FetchResult
 	if err := workflow.ExecuteActivity(ctx, FetchDocumentActivityName, input.URL).Get(ctx, &fetchResult); err != nil {
 		return err
+	}
+
+	// Validate content type matches expected type
+	if err := validateContentType(fetchResult.ContentType, input.Type); err != nil {
+		logger.Warn("Content type mismatch", "expected", input.Type, "actual", fetchResult.ContentType, "error", err)
+		// Continue processing but log the mismatch - don't fail completely
 	}
 
 	// Parallel processing
@@ -81,9 +97,35 @@ func DocumentIngestionWorkflow(ctx workflow.Context, input DocumentInput) error 
 	return nil
 }
 
+// validateContentType checks if the fetched content type matches the expected document type
+func validateContentType(contentType, expectedType string) error {
+	contentType = strings.ToLower(contentType)
+	expectedType = strings.ToLower(expectedType)
+
+	switch expectedType {
+	case "pdf":
+		if !strings.Contains(contentType, "application/pdf") {
+			return fmt.Errorf("expected PDF but got %s", contentType)
+		}
+	case "text":
+		if !strings.Contains(contentType, "text/") {
+			return fmt.Errorf("expected text but got %s", contentType)
+		}
+	case "html", "web":
+		if !strings.Contains(contentType, "text/html") {
+			return fmt.Errorf("expected HTML but got %s", contentType)
+		}
+	default:
+		// Unknown type, allow through
+		return nil
+	}
+	return nil
+}
+
 // Activity types
 type FetchResult struct {
-	Content []byte
+	Content     []byte
+	ContentType string
 }
 
 type ExtractInput struct {

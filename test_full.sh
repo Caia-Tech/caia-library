@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "=== CAIA Library Full Test Suite ==="
+echo "=== Caia Library Full Test Suite ==="
 
 # Setup
 echo -e "\n1. Setting up test environment..."
@@ -9,15 +9,15 @@ cd /tmp/caia-library-repo
 rm -rf .git
 git init --initial-branch=main
 git config user.email "library@caiatech.com"
-git config user.name "CAIA Library"
-echo "# CAIA Library Repository" > README.md
+git config user.name "Caia Library"
+echo "# Caia Library Repository" > README.md
 git add README.md
 git commit -m "Initial commit"
 cd -
 
 # Start the server
-echo -e "\n2. Starting CAIA Library server..."
-export CAIA_REPO_PATH=/tmp/caia-library-repo
+echo -e "\n2. Starting Caia Library server..."
+export Caia_REPO_PATH=/tmp/caia-library-repo
 export PORT=8092
 ./caia-server &
 SERVER_PID=$!
@@ -32,7 +32,7 @@ curl -s http://localhost:8092/health | jq .
 
 # Create a test text file
 echo -e "\n4. Creating test content..."
-echo "This is a test document for CAIA Library. It contains important information about testing." > /tmp/test-doc.txt
+echo "This is a test document for Caia Library. It contains important information about testing." > /tmp/test-doc.txt
 python3 -m http.server 8888 --directory /tmp &
 HTTP_PID=$!
 sleep 2
@@ -68,7 +68,7 @@ cat > /tmp/test-doc.html << EOF
 <html>
 <head><title>Test Document</title></head>
 <body>
-<h1>CAIA Library Test</h1>
+<h1>Caia Library Test</h1>
 <p>This is an HTML document for testing the extraction capabilities.</p>
 <script>console.log('This should be removed');</script>
 <style>body { color: black; }</style>

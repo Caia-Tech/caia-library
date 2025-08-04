@@ -1,20 +1,20 @@
 #!/bin/bash
 
-echo "Starting CAIA Library server..."
+echo "Starting Caia Library server..."
 
 # Create a test Git repository
 mkdir -p /tmp/caia-library-repo
 cd /tmp/caia-library-repo
 git init --initial-branch=main
 git config user.email "library@caiatech.com"
-git config user.name "CAIA Library"
-echo "# CAIA Library Repository" > README.md
+git config user.name "Caia Library"
+echo "# Caia Library Repository" > README.md
 git add README.md
 git commit -m "Initial commit"
 cd -
 
 # Start the server
-export CAIA_REPO_PATH=/tmp/caia-library-repo
+export Caia_REPO_PATH=/tmp/caia-library-repo
 export PORT=8091
 ./caia-server &
 SERVER_PID=$!

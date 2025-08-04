@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/caiatech/caia-library/pkg/embedder"
+	"github.com/Caia-Tech/caia-library/pkg/embedder"
 	"go.temporal.io/sdk/activity"
 )
 

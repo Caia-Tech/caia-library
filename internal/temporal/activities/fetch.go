@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/caiatech/caia-library/internal/temporal/workflows"
+	"github.com/Caia-Tech/caia-library/internal/temporal/workflows"
 	"go.temporal.io/sdk/activity"
 )
 
@@ -41,6 +41,12 @@ func FetchDocumentActivity(ctx context.Context, url string) (workflows.FetchResu
 		return workflows.FetchResult{}, fmt.Errorf("failed to read response: %w", err)
 	}
 
-	logger.Info("Document fetched successfully", "url", url, "size", len(content))
-	return workflows.FetchResult{Content: content}, nil
+	// Get content type from response header
+	contentType := resp.Header.Get("Content-Type")
+	
+	logger.Info("Document fetched successfully", "url", url, "size", len(content), "contentType", contentType)
+	return workflows.FetchResult{
+		Content:     content,
+		ContentType: contentType,
+	}, nil
 }

@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-// Document represents a document in the CAIA Library system
+// Document represents a document in the Caia Library system
 type Document struct {
 	ID        string    `json:"id"`
 	Source    Source    `json:"source"`
@@ -34,6 +34,17 @@ type Content struct {
 func (d *Document) GitPath() string {
 	date := d.CreatedAt.Format("2006/01")
 	return fmt.Sprintf("documents/%s/%s/%s", d.Source.Type, date, d.ID)
+}
+
+// GetStoragePath returns the document storage path in format: documents/{prefix}/{id}
+func (d *Document) GetStoragePath() string {
+	if len(d.ID) < 2 {
+		return fmt.Sprintf("documents/%s/%s", d.ID, d.ID)
+	}
+	if len(d.ID) < 4 {
+		return fmt.Sprintf("documents/%s/%s", d.ID[:2], d.ID)
+	}
+	return fmt.Sprintf("documents/%s/%s/%s", d.ID[:2], d.ID[2:4], d.ID)
 }
 
 // Validate checks if the document has required fields

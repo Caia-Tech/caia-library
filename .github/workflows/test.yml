@@ -1,0 +1,127 @@
+name: Test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    name: Unit Tests
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Go
+      uses: actions/setup-go@v5
+      with:
+        go-version: '1.21'
+    
+    - name: Cache Go modules
+      uses: actions/cache@v3
+      with:
+        path: ~/go/pkg/mod
+        key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
+        restore-keys: |
+          ${{ runner.os }}-go-
+    
+    - name: Install dependencies
+      run: |
+        go mod download
+        go mod verify
+    
+    - name: Run tests
+      run: |
+        go test -v -race -short -coverprofile=coverage.out -covermode=atomic ./...
+    
+    - name: Upload coverage
+      uses: codecov/codecov-action@v3
+      with:
+        file: ./coverage.out
+        flags: unittests
+        name: codecov-umbrella
+    
+    - name: Test Attribution Compliance
+      run: |
+        echo "Verifying Caia Tech attribution in academic collector..."
+        go test -v ./internal/temporal/activities -run ".*Attribution.*"
+        go test -v ./pkg/ratelimit -run ".*Ethical.*"
+
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Go
+      uses: actions/setup-go@v5
+      with:
+        go-version: '1.21'
+    
+    - name: golangci-lint
+      uses: golangci/golangci-lint-action@v3
+      with:
+        version: latest
+        args: --timeout=5m
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Go
+      uses: actions/setup-go@v5
+      with:
+        go-version: '1.21'
+    
+    - name: Build
+      run: |
+        go build -v ./cmd/server
+        
+    - name: Build Docker image
+      run: |
+        docker build -t caia-library:test .
+        
+  integration:
+    name: Integration Tests
+    runs-on: ubuntu-latest
+    services:
+      temporal:
+        image: temporalio/auto-setup:latest
+        ports:
+          - 7233:7233
+        options: >-
+          --health-cmd "temporal health-check"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Go
+      uses: actions/setup-go@v5
+      with:
+        go-version: '1.21'
+    
+    - name: Wait for Temporal
+      run: |
+        for i in {1..30}; do
+          if nc -z localhost 7233; then
+            echo "Temporal is ready"
+            break
+          fi
+          echo "Waiting for Temporal..."
+          sleep 2
+        done
+    
+    - name: Run integration tests
+      env:
+        TEMPORAL_HOST: localhost:7233
+      run: |
+        go test -v -run Integration ./...

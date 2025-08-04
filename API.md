@@ -1,4 +1,4 @@
-# CAIA Library API Documentation
+# Caia Library API Documentation
 
 ## Base URL
 ```

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/caiatech/caia-library/pkg/embedder"
+	"github.com/Caia-Tech/caia-library/pkg/embedder"
 )
 
 func main() {
@@ -21,7 +21,7 @@ func main() {
 		"Machine learning is a subset of artificial intelligence.",
 		"AI and machine learning are related fields in computer science.",
 		"The weather today is sunny and warm.",
-		"CAIA Library uses Git for cryptographic provenance.",
+		"Caia Library uses Git for cryptographic provenance.",
 		"Document intelligence systems need trustworthy data storage.",
 	}
 

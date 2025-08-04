@@ -1,7 +1,7 @@
-# CAIA Library Development Roadmap
+# Caia Library Development Roadmap
 
 ## Vision
-Transform CAIA Library into the definitive Git-native document intelligence platform with automated data collection, curation, and cryptographic provenance.
+Transform Caia Library into the definitive Git-native document intelligence platform with automated data collection, curation, and cryptographic provenance.
 
 ## Phase 1: Core Enhancements (Week 1-2)
 

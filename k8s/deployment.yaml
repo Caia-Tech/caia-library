@@ -1,0 +1,58 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: caia-library
+  namespace: caia-library
+  labels:
+    app: caia-library
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: caia-library
+  template:
+    metadata:
+      labels:
+        app: caia-library
+    spec:
+      containers:
+      - name: caia
+        image: caiatech/caia-library:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+          name: http
+        envFrom:
+        - configMapRef:
+            name: caia-config
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "250m"
+          limits:
+            memory: "2Gi"
+            cpu: "1000m"
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: http
+          initialDelaySeconds: 30
+          periodSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: http
+          initialDelaySeconds: 5
+          periodSeconds: 5
+        volumeMounts:
+        - name: repo-data
+          mountPath: /data/repo
+        - name: models-data
+          mountPath: /data/models
+      volumes:
+      - name: repo-data
+        persistentVolumeClaim:
+          claimName: caia-repo-pvc
+      - name: models-data
+        persistentVolumeClaim:
+          claimName: caia-models-pvc

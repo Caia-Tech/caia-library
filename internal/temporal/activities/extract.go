@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/caiatech/caia-library/internal/temporal/workflows"
-	"github.com/caiatech/caia-library/pkg/extractor"
+	"github.com/Caia-Tech/caia-library/internal/temporal/workflows"
+	"github.com/Caia-Tech/caia-library/pkg/extractor"
 	"go.temporal.io/sdk/activity"
 )
 

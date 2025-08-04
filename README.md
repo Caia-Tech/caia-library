@@ -1,4 +1,4 @@
-# CAIA Library
+# Caia Library
 
 **Experimental Git-Native Document Intelligence System**
 
@@ -8,11 +8,13 @@
 
 ## Overview
 
-CAIA Library is an experimental document management system that leverages Git's immutable history and cryptographic integrity to create auditable, versioned document intelligence pipelines. Built with Temporal workflows and designed for human-in-the-loop operations, it provides a foundation for building trustworthy AI data systems.
+Caia Library is an experimental document management system that leverages Git's immutable history and cryptographic integrity to create auditable, versioned document intelligence pipelines. Built with Temporal workflows and designed for human-in-the-loop operations, it provides a foundation for building trustworthy AI data systems.
+
+**Focus on Ethical Academic Sources**: Caia Library specializes in collecting from academic sources that explicitly allow programmatic access, with proper attribution to Caia Tech and full compliance with terms of service.
 
 > ⚠️ **Experimental Software**: This project is under active development and APIs may change. Use in production at your own risk.
 
-## Key Strengths
+## Key Features
 
 ### 🔒 Cryptographic Provenance
 - Every document ingestion creates an immutable Git commit
@@ -26,23 +28,41 @@ CAIA Library is an experimental document management system that leverages Git's 
 - Automatic retry logic for transient failures
 - Extensible architecture for adding ML models and processors
 
+### 🎓 Ethical Academic Collection
+- **Only sources that allow programmatic access**: arXiv, PubMed Central, DOAJ, PLOS
+- **Strict rate limiting**: Respects each source's API limits
+- **Full attribution**: Every document credits both the source and Caia Tech
+- **Transparent identification**: Clear User-Agent with contact information
+
+### 📅 Scheduled & Batch Ingestion
+- Cron-based scheduled collection from academic sources
+- Batch processing for importing multiple documents efficiently
+- Automatic deduplication to prevent redundant processing
+- Configurable filters for targeted data collection
+
+### 🚀 Easy Deployment
+- Production-ready Docker Compose configuration
+- Kubernetes manifests for cloud deployments
+- Development mode with hot reload
+- Built-in health checks and monitoring
+
 ### 👥 Human-in-the-Loop Design
 - Git branches allow review before merging to main
 - Clear commit messages document each ingestion
 - Manual intervention points for quality control
 - Transparent processing history
 
-### 📊 Synthetic Data Generation Support
-- Proper attribution tracking via metadata
-- Source URL preservation for all documents
-- Timestamp and processing metadata
-- Clear tagging system for synthetic vs. real data
+### 📊 Advanced Document Processing
+- PDF text extraction with OCR support (planned)
+- HTML content cleaning and metadata extraction
+- 384-dimensional embeddings without external dependencies
+- Extensible extractor and embedder interfaces
 
-### 🎯 Hallucination & Error Tracking
-- Failed ingestions tracked in Temporal workflow history
-- Error states preserved for debugging
-- Separate branches prevent bad data from polluting main
-- Retry attempts logged with full error context
+### 🔍 Git Query Language (GQL)
+- **SQL-like syntax** for querying documents in Git
+- **Attribution tracking** queries to ensure compliance
+- **Time-travel queries** through Git history
+- **Performance optimized** using Git's efficient storage
 
 ## Architecture
 
@@ -65,26 +85,47 @@ CAIA Library is an experimental document management system that leverages Git's 
 - **Git as Primary Database**: Leverages Git's distributed, immutable design
 - **Document Versioning**: Full history of all document changes
 - **Parallel Processing**: Simultaneous text extraction and embedding generation
-- **Multiple Format Support**: Text, HTML, PDF (coming soon)
-- **RESTful API**: Simple HTTP interface for document ingestion
+- **Multiple Format Support**: Text, HTML, PDF
+- **Scheduled Ingestion**: Automated collection from RSS, APIs, and websites
+- **Batch Processing**: Import multiple documents efficiently
+- **RESTful API**: Comprehensive HTTP interface for all operations
 - **Workflow Tracking**: Monitor processing status via Temporal
+- **Docker & Kubernetes**: Production-ready deployment options
 
-## Installation
+## Quick Start
+
+### Docker Compose (Recommended)
 
 ```bash
 # Clone the repository
 git clone https://github.com/caiatech/caia-library
 cd caia-library
 
+# Start all services
+docker-compose up -d
+
+# Check service health
+curl http://localhost:8080/health
+```
+
+### Development Mode
+
+```bash
+# Run with hot reload
+docker-compose -f docker-compose.yml -f docker-compose.dev.yml up
+```
+
+### Manual Installation
+
+```bash
 # Install dependencies
 go mod download
 
-# Start Temporal (required)
+# Start Temporal
 temporal server start-dev
 
-# Build and run
-go build -o caia-server ./cmd/server
-./caia-server
+# Run the server
+go run ./cmd/server
 ```
 
 ## Usage
@@ -92,14 +133,30 @@ go build -o caia-server ./cmd/server
 ### Ingest a Document
 
 ```bash
+# Collect an arXiv paper with proper attribution
 curl -X POST http://localhost:8080/api/v1/documents \
   -H "Content-Type: application/json" \
   -d '{
-    "url": "https://example.com/document.pdf",
+    "url": "https://arxiv.org/pdf/2301.00001.pdf",
     "type": "pdf",
     "metadata": {
-      "source": "web_scrape",
-      "synthetic": "false"
+      "source": "arXiv",
+      "attribution": "Content from arXiv.org, collected by Caia Tech",
+      "ethical_compliance": "true"
+    }
+  }'
+
+# Set up scheduled arXiv collection (daily)
+curl -X POST http://localhost:8080/api/v1/ingestion/scheduled \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "arxiv",
+    "type": "arxiv",
+    "url": "http://export.arxiv.org/api/query",
+    "schedule": "0 2 * * *",
+    "filters": ["cs.AI", "cs.LG"],
+    "metadata": {
+      "attribution": "Caia Tech"
     }
   }'
 ```
@@ -110,9 +167,26 @@ curl -X POST http://localhost:8080/api/v1/documents \
 curl http://localhost:8080/api/v1/workflows/{workflow_id}
 ```
 
+### Query Documents with Git Query Language
+
+```bash
+# Find all arXiv papers
+curl -X POST http://localhost:8080/api/v1/query \
+  -H "Content-Type: application/json" \
+  -d '{"query": "SELECT FROM documents WHERE source = \"arXiv\" ORDER BY created_at DESC"}'
+
+# Check attribution compliance
+curl http://localhost:8080/api/v1/stats/attribution
+
+# Search by content
+curl -X POST http://localhost:8080/api/v1/query \
+  -H "Content-Type: application/json" \
+  -d '{"query": "SELECT FROM documents WHERE title ~ \"machine learning\" LIMIT 20"}'
+```
+
 ## Data Integrity & Provenance
 
-Every document in CAIA Library maintains:
+Every document in Caia Library maintains:
 
 1. **Source Attribution**: Original URL or path
 2. **Processing Timeline**: Timestamps for each stage
@@ -120,12 +194,39 @@ Every document in CAIA Library maintains:
 4. **Error Documentation**: Any failures during processing
 5. **Human Annotations**: Review notes and quality markers
 
+## Documentation
+
+- [API Reference](docs/API.md) - Complete API documentation
+- [Git Query Language](docs/GIT_QUERY_LANGUAGE.md) - SQL-like queries for document discovery
+- [Deployment Guide](docs/DEPLOYMENT.md) - Production deployment instructions
+- [Ethical Scraping](docs/ETHICAL_SCRAPING.md) - Academic source compliance guide
+- [Development Roadmap](docs/ROADMAP.md) - 10-week feature roadmap
+- [Automated Collection](docs/AUTOMATED_COLLECTION.md) - Setting up data pipelines
+
 ## Future Roadmap
 
-- [ ] ONNX Runtime integration for local embeddings
-- [ ] PDF extraction via pdfcpu
-- [ ] Structured data extraction
+### Phase 1 (Completed)
+- ✅ PDF support with basic detection
+- ✅ Advanced embeddings (384-dimensional)
+- ✅ Docker Compose deployment
+- ✅ Scheduled ingestion workflows
+
+### Phase 2 (Completed)
+- ✅ Git Query Language for document discovery
+- ✅ ONNX Runtime integration
+- ✅ Full PDF text extraction with ledongthuc/pdf
+- ✅ Git merge functionality with fast-forward support
+- ✅ Concurrent operation safety with mutex protection
+
+### Phase 3 (In Progress)
+- [ ] Authentication & rate limiting
+- [ ] Input validation and SSRF protection
+- [ ] Monitoring and alerting integration
+- [ ] Production hardening and optimization
+
+### Phase 4 (Planned)
 - [ ] Semantic search capabilities
+- [ ] Multi-modal embeddings
 - [ ] Differential privacy options
 - [ ] Federated learning support
 
@@ -138,11 +239,12 @@ This is experimental software. Contributions welcome, but expect breaking change
 - All documents stored in plaintext in Git
 - No built-in encryption (use git-crypt if needed)
 - Authentication not yet implemented
-- Rate limiting not yet implemented
+- API rate limiting not yet implemented
+- SSRF protection not yet implemented
 
 ## Philosophy
 
-CAIA Library embraces the principle that AI systems should be:
+Caia Library embraces the principle that AI systems should be:
 - **Auditable**: Every decision traceable to source data
 - **Reproducible**: Same inputs always produce same outputs
 - **Transparent**: Clear visibility into data transformations
@@ -156,7 +258,7 @@ By using Git as our foundation, we ensure these properties are not just features
 ## Author
 
 **Marvin Tutt**  
-Chief Executive Officer, CAIA Tech  
+Chief Executive Officer, Caia Tech  
 [owner@caiatech.com](mailto:owner@caiatech.com)
 
-Built with 🧠 by CAIA Tech - Experimental Intelligence Infrastructure
+Built with 🧠 by Caia Tech - Experimental Intelligence Infrastructure

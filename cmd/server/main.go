@@ -1,4 +1,4 @@
-// Package main provides the entry point for the CAIA Library server
+// Package main provides the entry point for the Caia Library server
 package main
 
 import (
@@ -7,9 +7,9 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/caiatech/caia-library/internal/api"
-	"github.com/caiatech/caia-library/internal/temporal/activities"
-	"github.com/caiatech/caia-library/internal/temporal/workflows"
+	"github.com/Caia-Tech/caia-library/internal/api"
+	"github.com/Caia-Tech/caia-library/internal/temporal/activities"
+	"github.com/Caia-Tech/caia-library/internal/temporal/workflows"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
 	"github.com/gofiber/fiber/v2/middleware/logger"
@@ -34,8 +34,10 @@ func main() {
 		MaxConcurrentWorkflowTaskExecutionSize: 10,
 	})
 	
-	// Register workflow
+	// Register workflows
 	w.RegisterWorkflow(workflows.DocumentIngestionWorkflow)
+	w.RegisterWorkflow(workflows.ScheduledIngestionWorkflow)
+	w.RegisterWorkflow(workflows.BatchIngestionWorkflow)
 	
 	// Register all activities
 	w.RegisterActivity(activities.FetchDocumentActivity)
@@ -44,6 +46,15 @@ func main() {
 	w.RegisterActivity(activities.StoreDocumentActivity)
 	w.RegisterActivity(activities.IndexDocumentActivity)
 	w.RegisterActivity(activities.MergeBranchActivity)
+	
+	// Register collector activities
+	collector := activities.NewCollectorActivities()
+	w.RegisterActivity(collector.CollectFromSourceActivity)
+	w.RegisterActivity(collector.CheckDuplicateActivity)
+	
+	// Register academic collector activities
+	academicCollector := activities.NewAcademicCollectorActivities()
+	w.RegisterActivity(academicCollector.CollectAcademicSourcesActivity)
 
 	// Start worker in background
 	go func() {
@@ -54,7 +65,7 @@ func main() {
 
 	// Initialize Fiber app with configuration
 	app := fiber.New(fiber.Config{
-		AppName:               "CAIA Library API",
+		AppName:               "Caia Library API",
 		DisableStartupMessage: false,
 		EnablePrintRoutes:     false,
 		ErrorHandler: func(c *fiber.Ctx, err error) error {
@@ -86,7 +97,8 @@ func main() {
 	}))
 
 	// Initialize handlers
-	h := api.NewHandlers(temporalClient)
+	repoPath := getEnv("CAIA_REPO_PATH", "./data/repo")
+	h := api.NewHandlers(temporalClient, repoPath)
 
 	// API Routes
 	setupRoutes(app, h)
@@ -105,7 +117,7 @@ func main() {
 
 	// Start server
 	port := getEnv("PORT", "8080")
-	log.Printf("Starting CAIA Library server on port %s", port)
+	log.Printf("Starting Caia Library server on port %s", port)
 	if err := app.Listen(":" + port); err != nil {
 		log.Fatalf("Failed to start server: %v", err)
 	}
@@ -125,16 +137,30 @@ func setupRoutes(app *fiber.App, h *api.Handlers) {
 	docs.Get("/:id", h.GetDocument)
 	docs.Get("/", h.ListDocuments)
 	
+	// Ingestion routes
+	ingestion := v1.Group("/ingestion")
+	ingestion.Post("/scheduled", h.CreateScheduledIngestion)
+	ingestion.Post("/batch", h.CreateBatchIngestion)
+	
 	// Workflow routes
 	workflows := v1.Group("/workflows")
 	workflows.Get("/:id", h.GetWorkflow)
 	
+	// Query routes (Git Query Language)
+	query := v1.Group("/query")
+	query.Post("/", h.ExecuteQuery)
+	query.Get("/examples", h.GetQueryExamples)
+	
+	// Stats routes
+	stats := v1.Group("/stats")
+	stats.Get("/attribution", h.GetAttributionStats)
+	
 	// Root redirect
 	app.Get("/", func(c *fiber.Ctx) error {
 		return c.JSON(fiber.Map{
-			"service": "CAIA Library",
+			"service": "Caia Library",
 			"version": "0.1.0",
-			"docs":    "https://github.com/caiatech/caia-library",
+			"docs":    "https://github.com/Caia-Tech/caia-library",
 		})
 	})
 }

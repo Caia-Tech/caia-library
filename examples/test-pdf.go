@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/caiatech/caia-library/pkg/extractor"
+	"github.com/Caia-Tech/caia-library/pkg/extractor"
 )
 
 func main() {

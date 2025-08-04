@@ -4,6 +4,7 @@ import (
 	"context"
 	"crypto/sha256"
 	"encoding/binary"
+	"fmt"
 	"math"
 	"sort"
 	"strings"
@@ -25,6 +26,11 @@ func NewAdvancedEmbedder(dimensions int) *AdvancedEmbedder {
 
 // Generate creates embeddings using advanced hashing techniques
 func (e *AdvancedEmbedder) Generate(ctx context.Context, text string) ([]float32, error) {
+	// Check for empty text
+	if text == "" {
+		return nil, fmt.Errorf("text cannot be empty")
+	}
+	
 	// Preprocess text
 	text = normalizeText(text)
 	
@@ -45,8 +51,8 @@ func (e *AdvancedEmbedder) Generate(ctx context.Context, text string) ([]float32
 		}
 		
 		// Word frequencies
-		wordIdx := i % len(features.wordFreqs)
-		if wordIdx < len(features.wordFreqs) {
+		if len(features.wordFreqs) > 0 {
+			wordIdx := i % len(features.wordFreqs)
 			value += features.wordFreqs[wordIdx] * 0.5
 		}
 		

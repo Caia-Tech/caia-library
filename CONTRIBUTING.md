@@ -1,4 +1,4 @@
-# Contributing to CAIA Library
+# Contributing to Caia Library
 
 First off, thanks for taking the time to contribute! 🎉
 

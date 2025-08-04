@@ -46,3 +46,14 @@ temporal-dev.yaml
 # Build artifacts
 dist/
 build/
+/server
+
+# Data directories
+data/repo/
+data/models/
+data/cache/
+
+# Test files
+test-*.pdf
+test-*.txt
+test-*.html

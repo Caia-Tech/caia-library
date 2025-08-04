@@ -1,9 +1,9 @@
 #!/bin/bash
-# Example: Ingest a document into CAIA Library
+# Example: Ingest a document into Caia Library
 
 # Check if server is running
 if ! curl -s http://localhost:8080/health > /dev/null; then
-    echo "❌ CAIA Library server is not running on port 8080"
+    echo "❌ Caia Library server is not running on port 8080"
     echo "   Start it with: ./caia-server"
     exit 1
 fi

@@ -5,7 +5,8 @@ import (
 	"log"
 	"time"
 
-	"github.com/caiatech/caia-library/internal/temporal/workflows"
+	"github.com/Caia-Tech/caia-library/internal/temporal/workflows"
+	"github.com/Caia-Tech/caia-library/pkg/gql"
 	"github.com/gofiber/fiber/v2"
 	"github.com/google/uuid"
 	"go.temporal.io/sdk/client"
@@ -14,12 +15,14 @@ import (
 // Handlers contains the HTTP handlers for the API
 type Handlers struct {
 	temporal client.Client
+	repoPath string
 }
 
 // NewHandlers creates a new handlers instance
-func NewHandlers(temporal client.Client) *Handlers {
+func NewHandlers(temporal client.Client, repoPath string) *Handlers {
 	return &Handlers{
 		temporal: temporal,
+		repoPath: repoPath,
 	}
 }
 
@@ -225,4 +228,257 @@ func (h *Handlers) GetWorkflow(c *fiber.Ctx) error {
 	}
 
 	return c.JSON(response)
+}
+
+// ScheduledIngestionRequest represents a scheduled ingestion source
+type ScheduledIngestionRequest struct {
+	Name     string            `json:"name" validate:"required"`
+	Type     string            `json:"type" validate:"required,oneof=rss web api"`
+	URL      string            `json:"url" validate:"required,url"`
+	Schedule string            `json:"schedule" validate:"required"` // Cron expression
+	Filters  []string          `json:"filters"`
+	Metadata map[string]string `json:"metadata"`
+}
+
+// ScheduledIngestionResponse represents the response for scheduled ingestion
+type ScheduledIngestionResponse struct {
+	WorkflowID string `json:"workflow_id"`
+	RunID      string `json:"run_id"`
+	Schedule   string `json:"schedule"`
+}
+
+// CreateScheduledIngestion creates a new scheduled ingestion workflow
+func (h *Handlers) CreateScheduledIngestion(c *fiber.Ctx) error {
+	var req ScheduledIngestionRequest
+
+	// Parse request body
+	if err := c.BodyParser(&req); err != nil {
+		log.Printf("Failed to parse request body: %v", err)
+		return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{
+			"error": "Invalid request body",
+			"details": err.Error(),
+		})
+	}
+
+	// Validate request
+	if req.Name == "" {
+		return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{
+			"error": "Name is required",
+		})
+	}
+
+	// Generate workflow ID
+	workflowID := fmt.Sprintf("scheduled-%s-%s", req.Name, uuid.New().String())
+
+	// Start scheduled workflow
+	we, err := h.temporal.ExecuteWorkflow(c.Context(), client.StartWorkflowOptions{
+		ID:        workflowID,
+		TaskQueue: "caia-library",
+	}, workflows.ScheduledIngestionWorkflow, workflows.ScheduledIngestionInput{
+		Name:     req.Name,
+		Type:     req.Type,
+		URL:      req.URL,
+		Schedule: req.Schedule,
+		Filters:  req.Filters,
+		Metadata: req.Metadata,
+	})
+	if err != nil {
+		log.Printf("Failed to start scheduled workflow: %v", err)
+		return c.Status(fiber.StatusInternalServerError).JSON(fiber.Map{
+			"error": "Failed to start scheduled ingestion",
+			"details": err.Error(),
+		})
+	}
+
+	log.Printf("Started scheduled ingestion workflow: %s for source: %s", workflowID, req.Name)
+
+	return c.Status(fiber.StatusCreated).JSON(ScheduledIngestionResponse{
+		WorkflowID: we.GetID(),
+		RunID:      we.GetRunID(),
+		Schedule:   req.Schedule,
+	})
+}
+
+// BatchIngestionRequest represents a batch of documents to ingest
+type BatchIngestionRequest struct {
+	Documents []IngestDocumentRequest `json:"documents" validate:"required,min=1"`
+}
+
+// BatchIngestionResponse represents the response for batch ingestion
+type BatchIngestionResponse struct {
+	WorkflowID string `json:"workflow_id"`
+	RunID      string `json:"run_id"`
+	Count      int    `json:"count"`
+}
+
+// CreateBatchIngestion creates a batch ingestion workflow
+func (h *Handlers) CreateBatchIngestion(c *fiber.Ctx) error {
+	var req BatchIngestionRequest
+
+	// Parse request body
+	if err := c.BodyParser(&req); err != nil {
+		log.Printf("Failed to parse request body: %v", err)
+		return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{
+			"error": "Invalid request body",
+			"details": err.Error(),
+		})
+	}
+
+	// Validate request
+	if len(req.Documents) == 0 {
+		return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{
+			"error": "At least one document is required",
+		})
+	}
+
+	// Convert to workflow input
+	var documents []workflows.DocumentInput
+	for _, doc := range req.Documents {
+		documents = append(documents, workflows.DocumentInput{
+			URL:      doc.URL,
+			Type:     doc.Type,
+			Metadata: doc.Metadata,
+		})
+	}
+
+	// Generate workflow ID
+	workflowID := fmt.Sprintf("batch-%s", uuid.New().String())
+
+	// Start batch workflow
+	we, err := h.temporal.ExecuteWorkflow(c.Context(), client.StartWorkflowOptions{
+		ID:        workflowID,
+		TaskQueue: "caia-library",
+	}, workflows.BatchIngestionWorkflow, documents)
+	if err != nil {
+		log.Printf("Failed to start batch workflow: %v", err)
+		return c.Status(fiber.StatusInternalServerError).JSON(fiber.Map{
+			"error": "Failed to start batch ingestion",
+			"details": err.Error(),
+		})
+	}
+
+	log.Printf("Started batch ingestion workflow: %s for %d documents", workflowID, len(documents))
+
+	return c.Status(fiber.StatusAccepted).JSON(BatchIngestionResponse{
+		WorkflowID: we.GetID(),
+		RunID:      we.GetRunID(),
+		Count:      len(documents),
+	})
+}
+
+// QueryRequest represents a GQL query request
+type QueryRequest struct {
+	Query string `json:"query" validate:"required"`
+}
+
+// QueryResponse represents a GQL query response
+type QueryResponse struct {
+	Type    string        `json:"type"`
+	Count   int           `json:"count"`
+	Items   []interface{} `json:"items"`
+	Elapsed int64         `json:"elapsed_ms"`
+	Query   string        `json:"query"`
+}
+
+// ExecuteQuery executes a Git Query Language query
+func (h *Handlers) ExecuteQuery(c *fiber.Ctx) error {
+	var req QueryRequest
+
+	// Parse request body
+	if err := c.BodyParser(&req); err != nil {
+		log.Printf("Failed to parse query request: %v", err)
+		return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{
+			"error":   "Invalid request body",
+			"details": err.Error(),
+		})
+	}
+
+	// Validate query
+	if req.Query == "" {
+		return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{
+			"error": "Query cannot be empty",
+		})
+	}
+
+	log.Printf("Executing GQL query: %s", req.Query)
+
+	// Create executor
+	executor := gql.NewExecutor(h.repoPath)
+
+	// Execute query
+	result, err := executor.Execute(c.Context(), req.Query)
+	if err != nil {
+		log.Printf("Query execution failed: %v", err)
+		return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{
+			"error":   "Query execution failed",
+			"details": err.Error(),
+			"query":   req.Query,
+		})
+	}
+
+	// Return results
+	return c.JSON(QueryResponse{
+		Type:    string(result.Type),
+		Count:   result.Count,
+		Items:   result.Items,
+		Elapsed: result.Elapsed.Milliseconds(),
+		Query:   req.Query,
+	})
+}
+
+// GetQueryExamples returns example GQL queries
+func (h *Handlers) GetQueryExamples(c *fiber.Ctx) error {
+	examples := make([]fiber.Map, len(gql.QueryExamples))
+	for i, ex := range gql.QueryExamples {
+		examples[i] = fiber.Map{
+			"name":        ex.Name,
+			"query":       ex.Query,
+			"description": ex.Description,
+		}
+	}
+
+	return c.JSON(fiber.Map{
+		"examples": examples,
+		"syntax": fiber.Map{
+			"select":    "SELECT FROM <type> WHERE <conditions> ORDER BY <field> [DESC] LIMIT <n>",
+			"types":     []string{"documents", "attribution", "sources", "authors"},
+			"operators": []string{"=", "!=", "~", ">", "<", "exists", "not exists"},
+		},
+	})
+}
+
+// GetAttributionStats returns attribution compliance statistics
+func (h *Handlers) GetAttributionStats(c *fiber.Ctx) error {
+	// Execute attribution query
+	executor := gql.NewExecutor(h.repoPath)
+	result, err := executor.Execute(c.Context(), gql.ExampleAttributionCompliance)
+	if err != nil {
+		log.Printf("Failed to get attribution stats: %v", err)
+		return c.Status(fiber.StatusInternalServerError).JSON(fiber.Map{
+			"error": "Failed to retrieve attribution statistics",
+		})
+	}
+
+	// Calculate compliance percentage
+	totalSources := result.Count
+	compliantSources := 0
+	
+	for _, item := range result.Items {
+		if attr, ok := item.(*gql.AttributionResult); ok && attr.CAIAAttribution {
+			compliantSources++
+		}
+	}
+
+	complianceRate := float64(0)
+	if totalSources > 0 {
+		complianceRate = float64(compliantSources) / float64(totalSources) * 100
+	}
+
+	return c.JSON(fiber.Map{
+		"total_sources":     totalSources,
+		"compliant_sources": compliantSources,
+		"compliance_rate":   fmt.Sprintf("%.1f%%", complianceRate),
+		"attribution_text":  "Content collected by Caia Tech (https://caiatech.com)",
+		"policy":            "All documents must include proper attribution to both source and Caia Tech",
+	})
 }
