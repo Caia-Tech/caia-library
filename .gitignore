@@ -1,0 +1,48 @@
+# Binaries
+caia-server
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# Go workspace file
+go.work
+
+# Dependency directories
+vendor/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test artifacts
+/tmp/
+test-output/
+
+# Environment files
+.env
+.env.local
+
+# Log files
+*.log
+
+# Temporal development files
+temporal-dev.yaml
+.temporal/
+
+# Build artifacts
+dist/
+build/
