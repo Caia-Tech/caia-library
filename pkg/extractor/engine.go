@@ -21,7 +21,7 @@ func NewEngine() *Engine {
 			"text": &TextExtractor{},
 			"txt":  &TextExtractor{},
 			"html": &HTMLExtractor{},
-			"pdf":  &PDFExtractor{},
+			"pdf":  &PDFExtractor{EnableOCR: false, MaxPages: 1000},
 		},
 	}
 }
@@ -71,19 +71,6 @@ func (h *HTMLExtractor) Extract(ctx context.Context, content []byte) (string, ma
 	return strings.TrimSpace(text), metadata, nil
 }
 
-// PDFExtractor handles PDF files
-type PDFExtractor struct{}
-
-func (p *PDFExtractor) Extract(ctx context.Context, content []byte) (string, map[string]string, error) {
-	// TODO: Implement actual PDF extraction using a library like pdfcpu
-	// For now, return a placeholder
-	metadata := map[string]string{
-		"type": "pdf",
-		"size": fmt.Sprintf("%d", len(content)),
-	}
-	
-	return "PDF extraction not yet implemented", metadata, nil
-}
 
 // Helper functions
 func removeHTMLTags(html, tag string) string {
