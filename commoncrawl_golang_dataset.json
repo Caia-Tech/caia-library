@@ -1,0 +1,12 @@
+{
+  "dataset": null,
+  "metadata": {
+    "name": "Common Crawl Go Programming Dataset",
+    "description": "Conversational Q\u0026A pairs derived from Common Crawl web data for Go programming content",
+    "version": "1.0.0",
+    "total_items": 0,
+    "sources": "Common Crawl web archive data",
+    "purpose": "LLM training, fine-tuning, and Go programming assistance"
+  },
+  "generated_at": "2025-08-11T03:16:03Z"
+}

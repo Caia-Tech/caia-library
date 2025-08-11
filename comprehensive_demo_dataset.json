@@ -1,0 +1,55 @@
+{
+  "dataset": [
+    {
+      "id": "demo_1754885550_conv_1754885552",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "What is HTTPBin JSON?"
+        },
+        {
+          "role": "assistant",
+          "content": "HTTPBin JSON contains 44 words of content."
+        }
+      ],
+      "metadata": {
+        "quality": "medium",
+        "type": "overview"
+      },
+      "source": {
+        "url": "https://httpbin.org/json",
+        "title": "HTTPBin JSON",
+        "category": "API"
+      },
+      "created_at": "2025-08-11T00:12:32-04:00"
+    },
+    {
+      "id": "demo_1754885552_conv_1754885552",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "What is HTTPBin HTML?"
+        },
+        {
+          "role": "assistant",
+          "content": "HTTPBin HTML contains 605 words of content."
+        }
+      ],
+      "metadata": {
+        "quality": "low",
+        "type": "overview"
+      },
+      "source": {
+        "url": "https://httpbin.org/html",
+        "title": "HTTPBin HTML",
+        "category": "Content"
+      },
+      "created_at": "2025-08-11T00:12:32-04:00"
+    }
+  ],
+  "metadata": {
+    "name": "Comprehensive Demo Dataset",
+    "total_items": 2
+  },
+  "generated_at": "2025-08-11T00:12:32-04:00"
+}

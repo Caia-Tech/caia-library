@@ -1,0 +1,52 @@
+{
+  "dataset": [
+    {
+      "conversation": [
+        {
+          "content": "Can you tell me about the content from https://httpbin.org/html?",
+          "role": "user"
+        },
+        {
+          "content": "This content from https://httpbin.org/html contains 605 words. Here's what it covers:\n\nHerman Melville - Moby-Dick\n\nAvailing himself of the mild, summer-cool weather that now reigned in these latitudes, and in preparation for the peculiarly active pursuits shortly to be anticipated, Perth, the begrimed, blistered old blacksmith, had not removed his portable forge to the hold again, af...",
+          "role": "assistant"
+        }
+      ],
+      "created_at": "2025-08-10T23:18:19-04:00",
+      "id": "real_data_0_1754882299",
+      "metadata": {
+        "source_url": "https://httpbin.org/html",
+        "timestamp": "2025-08-10T23:18:19-04:00",
+        "type": "real_data_analysis",
+        "word_count": 605
+      }
+    },
+    {
+      "conversation": [
+        {
+          "content": "Can you tell me about the content from https://httpbin.org/json?",
+          "role": "user"
+        },
+        {
+          "content": "This content from https://httpbin.org/json contains 44 words. Here's what it covers:\n\n{\n\n\"slideshow\": {\n\n\"author\": \"Yours Truly\",\n\n\"date\": \"date of publication\",\n\n\"slides\": [\n\n{\n\n\"title\": \"Wake up to WonderWidgets!\",\n\n\"type\": \"all\"\n\n},\n\n{\n\n\"items\": [\n\n\"Why WonderWidgets are great\",\n\n\"Who buys WonderWidgets\"\n\n],\n\n\"title\": \"Overview\",\n\n\"type\": \"all\"\n\n}\n\n],\n\n\"title\": \"Sample Slide Show\"...",
+          "role": "assistant"
+        }
+      ],
+      "created_at": "2025-08-10T23:18:19-04:00",
+      "id": "real_data_1_1754882299",
+      "metadata": {
+        "source_url": "https://httpbin.org/json",
+        "timestamp": "2025-08-10T23:18:19-04:00",
+        "type": "real_data_analysis",
+        "word_count": 44
+      }
+    }
+  ],
+  "metadata": {
+    "description": "Conversational Q\u0026A pairs generated from actual web content",
+    "generated_at": "2025-08-10T23:18:19-04:00",
+    "name": "Real Data Conversational Dataset",
+    "source": "Real web content processing",
+    "total_items": 2,
+    "version": "1.0.0"
+  }
+}

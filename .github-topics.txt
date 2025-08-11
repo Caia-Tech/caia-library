@@ -1,0 +1,15 @@
+git
+temporal
+document-management
+data-lineage
+ai-infrastructure
+golang
+provenance
+document-processing
+workflow-orchestration
+cryptographic-integrity
+ai-data
+embeddings
+text-extraction
+audit-trail
+human-in-the-loop

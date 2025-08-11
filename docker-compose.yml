@@ -1,0 +1,90 @@
+version: '3.8'
+
+services:
+  # Temporal server for workflow orchestration
+  temporal:
+    image: temporalio/auto-setup:latest
+    ports:
+      - "7233:7233"
+      - "8233:8233"
+    environment:
+      - DB=postgresql
+      - DB_PORT=5432
+      - POSTGRES_USER=temporal
+      - POSTGRES_PWD=temporal
+      - POSTGRES_SEEDS=postgres
+      - DYNAMIC_CONFIG_FILE_PATH=config/dynamicconfig/development-sql.yaml
+    depends_on:
+      - postgres
+    volumes:
+      - ./temporal-data:/etc/temporal
+    networks:
+      - caia-network
+
+  # PostgreSQL for Temporal and metadata
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_USER: temporal
+      POSTGRES_PASSWORD: temporal
+      POSTGRES_DB: temporal
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      - caia-network
+
+  # Caia Library server
+  caia:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - TEMPORAL_HOST=temporal:7233
+      - Caia_REPO_PATH=/data/repo
+      - PORT=8080
+      - CORS_ORIGINS=*
+    volumes:
+      - ./data/repo:/data/repo
+      - ./models:/data/models
+    depends_on:
+      - temporal
+    networks:
+      - caia-network
+    restart: unless-stopped
+
+  # Optional: MinIO for large file storage
+  minio:
+    image: minio/minio:latest
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+    command: server /data --console-address ":9001"
+    volumes:
+      - minio-data:/data
+    networks:
+      - caia-network
+
+  # Optional: Redis for caching
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    networks:
+      - caia-network
+
+networks:
+  caia-network:
+    driver: bridge
+
+volumes:
+  postgres-data:
+  minio-data:
+  redis-data:
+  temporal-data:

@@ -1,0 +1,108 @@
+# Caia Library Academic Sources Configuration
+# Only sources that explicitly allow programmatic access
+
+sources:
+  - name: arxiv
+    display_name: "arXiv"
+    description: "Open access to 2M+ academic articles in physics, mathematics, computer science, etc."
+    api_url: "http://export.arxiv.org/api/query"
+    terms_url: "https://arxiv.org/help/api/tou"
+    rate_limit:
+      requests_per_second: 0.33  # 1 request per 3 seconds
+      burst: 1
+    attribution_required: true
+    attribution_text: "Content from arXiv.org"
+    license: "arXiv License"
+    categories:
+      - "cs.AI"  # Artificial Intelligence
+      - "cs.LG"  # Machine Learning
+      - "cs.CL"  # Computation and Language
+      - "cs.CV"  # Computer Vision
+      - "cs.RO"  # Robotics
+      - "stat.ML" # Machine Learning (Statistics)
+
+  - name: pubmed
+    display_name: "PubMed Central"
+    description: "Free full-text archive of biomedical and life sciences journal literature"
+    api_url: "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
+    terms_url: "https://www.ncbi.nlm.nih.gov/home/about/policies/"
+    rate_limit:
+      requests_per_second: 3  # Without API key
+      burst: 1
+    attribution_required: true
+    attribution_text: "Content from PubMed Central"
+    license: "Various (check individual articles)"
+    note: "Only access Open Access subset"
+
+  - name: doaj
+    display_name: "Directory of Open Access Journals"
+    description: "Community-curated list of open access journals"
+    api_url: "https://doaj.org/api/v2/"
+    terms_url: "https://doaj.org/terms"
+    rate_limit:
+      requests_per_second: 1
+      burst: 10
+    attribution_required: true
+    attribution_text: "Indexed by DOAJ"
+    license: "Open Access"
+
+  - name: plos
+    display_name: "PLOS (Public Library of Science)"
+    description: "Open access scientific journals"
+    api_url: "https://api.plos.org/"
+    terms_url: "https://www.plos.org/terms-of-use"
+    rate_limit:
+      requests_per_second: 1
+      burst: 5
+    attribution_required: true
+    attribution_text: "Published in PLOS"
+    license: "CC-BY"
+
+  - name: core
+    display_name: "CORE"
+    description: "World's largest collection of open access research papers"
+    api_url: "https://api.core.ac.uk/v3/"
+    terms_url: "https://core.ac.uk/terms"
+    rate_limit:
+      requests_per_second: 2
+      burst: 10
+    attribution_required: true
+    attribution_text: "Aggregated by CORE"
+    license: "Various open licenses"
+    note: "Requires API key for production use"
+
+  - name: semantic_scholar
+    display_name: "Semantic Scholar"
+    description: "Free, AI-powered research tool for scientific literature"
+    api_url: "https://api.semanticscholar.org/"
+    terms_url: "https://www.semanticscholar.org/product/api/license"
+    rate_limit:
+      requests_per_second: 1  # 100 requests per 5 minutes
+      burst: 1
+    attribution_required: true
+    attribution_text: "Data from Semantic Scholar"
+    license: "ODC-BY"
+    note: "Focus on paper metadata, not full text"
+
+# Ethical scraping principles
+principles:
+  - "Only access sources that explicitly allow programmatic access"
+  - "Respect all rate limits and implement backoff"
+  - "Always include proper attribution and source URLs"
+  - "Identify bot traffic with descriptive User-Agent"
+  - "Cache results to minimize repeated requests"
+  - "Honor robots.txt and terms of service"
+  - "Only collect openly licensed content"
+  - "Preserve original author attribution"
+
+# User agent format
+user_agent_template: "Caia-Library/{version} (https://github.com/Caia-Tech/caia-library; library@caiatech.com) Academic-Research-Bot"
+
+# Collection best practices
+best_practices:
+  - "Start with small batches to test"
+  - "Implement exponential backoff on errors"
+  - "Log all collection activities"
+  - "Store rate limit state persistently"
+  - "Use official APIs over scraping HTML"
+  - "Validate license compatibility"

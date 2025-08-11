@@ -1,0 +1,904 @@
+{
+  "dataset": [
+    {
+      "id": "machine_learning_intro_1754883792",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you explain Machine Learning to me?"
+        },
+        {
+          "role": "assistant",
+          "content": "Let me explain Machine Learning.\n\nJump to content\nFrom Wikipedia, the free encyclopedia\nStudy of algorithms that improve automatically through experience\nFor the journal, see\nMachine Learning (journal)\n.\n\"Statistical learning\" redirects here. For statistical learning in linguistics, see\nStatistical learning in language acquisition\n.\nPart of a series on\nMachine learning\nand\ndata mining\nParadigms\nSupervised learning Unsupervised learning Semi-supervised learning Self-supervised learning Reinforcement learning Meta-learning Online learning Batch learning Curriculum learning Rule-based learning Neuro-symbolic AI Neuromorphic engineering Quantum machine learning"
+        }
+      ],
+      "metadata": {
+        "difficulty": "beginner",
+        "domain": "Technology",
+        "type": "introduction"
+      },
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Machine_learning",
+        "title": "Machine Learning",
+        "domain": "Technology",
+        "category": "AI",
+        "word_count": 18472,
+        "quality": "excellent"
+      },
+      "created_at": "2025-08-11T03:43:12Z"
+    },
+    {
+      "id": "machine_learning_detailed_1754883792",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you go deeper into the key concepts of Machine Learning?"
+        },
+        {
+          "role": "assistant",
+          "content": "Here's a deeper look at Machine Learning:\n\nProblems\nClassification Generative modeling Regression Clustering Dimensionality reduction Density estimation Anomaly detection Data cleaning AutoML Association rules Semantic analysis Structured prediction Feature engineering Feature learning Learning to rank Grammar induction Ontology learning Multimodal learning Supervised learning ( classification • regression ) Apprenticeship learning Decision trees Ensembles Bagging Boosting Random forest k -NN Linear regression Naive Bayes Artificial neural networks Logistic regression Perceptron Relevance vector machine (RVM) Support vector machine (SVM) Clustering BIRCH CURE Hierarchical k -means Fuzzy Expectation–maximization (EM) DBSCAN OPTICS Mean shift Dimensionality reduction Factor analysis CCA ICA LDA NMF PCA PGD t-SNE SDL Structured pr...\n\n(ECRAM)\nReinforcement learning Q-learning Policy gradient SARSA Temporal difference (TD) Multi-agent Self-play\nLearning with humans\nActive learning Crowdsourcing Human-in-the-loop Mechanistic interpretability RLHF\nModel diagnostics\nCoefficient of determination Confusion matrix Learning curve ROC curve\nMathematical foundations\nKernel machines Bias–variance tradeoff Computational learning theory Empirical risk minimization Occam learning PAC learning Statistical learning VC theory Topological deep learning\n\nJournals and conferences\nAAAI ECML PKDD NeurIPS ICML ICLR IJCAI ML JMLR\nRelated articles\nGlossary of artificial intelligence List of datasets for machine-learning research List of datasets in computer vision and image processing Outline of machine learning v t e\nPart of a series on\nArtificial intelligence (AI) Major goals Artificial general intelligence Intelligent agent Recursive self-improvement Planning Computer vision General game playing Knowledge representation Natural language processing Robotics AI safety"
+        }
+      ],
+      "metadata": {
+        "difficulty": "intermediate",
+        "domain": "Technology",
+        "type": "detailed_explanation"
+      },
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Machine_learning",
+        "title": "Machine Learning",
+        "domain": "Technology",
+        "category": "AI",
+        "word_count": 18472,
+        "quality": "excellent"
+      },
+      "created_at": "2025-08-11T03:43:12Z"
+    },
+    {
+      "id": "machine_learning_qa_1754883792",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "What should I know about Machine Learning?"
+        },
+        {
+          "role": "assistant",
+          "content": "Glossary\nGlossary v t e Machine learning\n(\nML\n) is a\nfield of study\nin\nartificial intelligence\nconcerned with the development and study of\nstatistical algorithms\nthat can learn from\ndata\nand\ngeneralise\nto unseen data, and thus perform\ntasks\nwithout explicit\ninstructions\n.\n[ 1 ]\nWithin a subdiscipline in machine learning, advances in the field of\ndeep learning\nhave allowed\nneural networks\n, a class of statistical algorithms, to surpass many previous machine learning approaches in performance.\n[ 2 ]\nML finds application in many fields, including\nnatural language processing\n,\ncomputer vision\n,\nspeech recognition\n,\nemail filtering\n,\nagriculture\n, and\nmedicine\n. The application of ML to business problems is known as\npredictive analytics\n.\nStatistics\nand\nmathematical optimisation\n(mathematical programming) methods comprise the foundations of machine learning.\nData mining\nis a related field of study, focusing on\nexploratory data analysis\n(EDA) via\nunsupervised learning\n.\n[ 4 ] [ 5 ]\nFrom a th..."
+        }
+      ],
+      "metadata": {
+        "difficulty": "applied",
+        "domain": "Technology",
+        "type": "question_answer"
+      },
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Machine_learning",
+        "title": "Machine Learning",
+        "domain": "Technology",
+        "category": "AI",
+        "word_count": 18472,
+        "quality": "excellent"
+      },
+      "created_at": "2025-08-11T03:43:12Z"
+    },
+    {
+      "id": "deep_learning_intro_1754883799",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you explain Deep Learning to me?"
+        },
+        {
+          "role": "assistant",
+          "content": "Let me explain Deep Learning.\n\nJump to content\nFrom Wikipedia, the free encyclopedia\nBranch of machine learning\nFor the TV series episode, see\nDeep Learning (South Park)\n.\nRepresenting images on multiple layers of abstraction in deep learning [ 1 ]\nPart of a series on\nArtificial intelligence (AI) Major goals Artificial general intelligence Intelligent agent Recursive self-improvement Planning Computer vision General game playing Knowledge representation Natural language processing Robotics AI safety\nApproaches\nMachine learning Symbolic Deep learning Bayesian networks Evolutionary algorithms Hybrid intelligent systems Systems integration Applications Bioinformatics Deepfake Earth sciences Finance Generative AI Art Audio Music Government Healthcare Mental health Industry Software development Translation Military Physics Projects Philosophy Artificial consciousness Chinese room Friendly AI Control problem"
+        }
+      ],
+      "metadata": {
+        "difficulty": "beginner",
+        "domain": "Technology",
+        "type": "introduction"
+      },
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Deep_learning",
+        "title": "Deep Learning",
+        "domain": "Technology",
+        "category": "AI",
+        "word_count": 21132,
+        "quality": "excellent"
+      },
+      "created_at": "2025-08-11T03:43:19Z"
+    },
+    {
+      "id": "deep_learning_detailed_1754883799",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you go deeper into the key concepts of Deep Learning?"
+        },
+        {
+          "role": "assistant",
+          "content": "Here's a deeper look at Deep Learning:\n\n/\nTakeover Ethics Existential risk Turing test Uncanny valley History Timeline Progress AI winter AI boom\nGlossary\nGlossary v t e\nIn\nmachine learning\n,\ndeep learning\nfocuses on utilizing multilayered\nneural networks\nto perform tasks such as\nclassification\n,\nregression\n, and\nrepresentation learning\n. The field takes inspiration from\nbiological neuroscience\nand is centered around stacking\nartificial neurons\ninto layers and \"training\" them to process data. The adjective \"deep\" refers to the use of multiple layers (ranging from three to several hundred or thousands) in the network. Methods used can be\n\nsupervised\n,\nsemi-supervised\nor\nunsupervised\n.\n[ 2 ]\nSome common deep learning network architectures include\nfully connected networks\n,\ndeep belief networks\n,\nrecurrent neural networks\n,\nconvolutional neural networks\n,\ngenerative adversarial networks\n,\ntransformers\n, and\nneural radiance fields\n. These architectures have been applied to fields including\ncomputer vision\n,\nspeech recognition\n,\nnatural language processing\n,\nmachine translation\n,\nbioinformatics\n,\ndrug design\n,\nmedical image analysis\n,\n\nclimate science\n, material inspection and\nboard game\nprograms, where they have produced results comparable to and in some cases surpassing human expert performance.\n[ 3 ] [ 4 ] [ 5 ]\nEarly forms of neural networks were inspired by information processing and distributed communication nodes in\nbiological systems\n, particularly the\nhuman brain\n. However, current neural networks do not intend to model the brain function of organisms, and are generally seen as low-quality models for that purpose.\n[ 6 ]"
+        }
+      ],
+      "metadata": {
+        "difficulty": "intermediate",
+        "domain": "Technology",
+        "type": "detailed_explanation"
+      },
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Deep_learning",
+        "title": "Deep Learning",
+        "domain": "Technology",
+        "category": "AI",
+        "word_count": 21132,
+        "quality": "excellent"
+      },
+      "created_at": "2025-08-11T03:43:19Z"
+    },
+    {
+      "id": "deep_learning_qa_1754883799",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "What should I know about Deep Learning?"
+        },
+        {
+          "role": "assistant",
+          "content": "image recognition\nmodel, the raw input may be an\nimage\n(represented as a\ntensor\nof\npixels\n). The first representational layer may attempt to identify basic shapes such as lines and circles, the second layer may compose and encode arrangements of edges, the third layer may encode a nose and eyes, and the fourth layer may recognize that the image contains a face.\nImportantly, a deep learning process can learn which features to optimally place at which level\non its own\n. Prior to deep learning, machine learning techniques often involved hand-crafted\nfeature engineering\nto transform the data into a more suitable representation for a classification algorithm to operate on. In the deep learning approach, features are not hand-crafted and the model\ndiscovers\nuseful feature representations from the data automatically. This does not eliminate the need for hand-tuning; for example, varying numbers of layers and layer sizes can provide different degrees of abstraction.\n[ 8 ] [ 2 ]\nThe word \"deep\"..."
+        }
+      ],
+      "metadata": {
+        "difficulty": "applied",
+        "domain": "Technology",
+        "type": "question_answer"
+      },
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Deep_learning",
+        "title": "Deep Learning",
+        "domain": "Technology",
+        "category": "AI",
+        "word_count": 21132,
+        "quality": "excellent"
+      },
+      "created_at": "2025-08-11T03:43:19Z"
+    },
+    {
+      "id": "natural_language_processing_intro_1754883806",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you explain Natural Language Processing to me?"
+        },
+        {
+          "role": "assistant",
+          "content": "Let me explain Natural Language Processing.\n\nJump to content\nFrom Wikipedia, the free encyclopedia\nProcessing of natural language by a computer\nThis article has multiple issues.\nPlease help\nimprove it\nor discuss these issues on the\ntalk page\n.\n( Learn how and when to remove these messages )\nThis article\nneeds additional citations for verification\n.\nPlease help improve this article by adding citations to reliable sources . Unsourced material may be challenged and removed. Find sources: \"Natural language processing\" – news · newspapers · books · scholar · JSTOR ( May 2024 ) ( Learn how and when to remove this message )"
+        }
+      ],
+      "metadata": {
+        "difficulty": "beginner",
+        "domain": "Technology",
+        "type": "introduction"
+      },
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Natural_language_processing",
+        "title": "Natural Language Processing",
+        "domain": "Technology",
+        "category": "AI",
+        "word_count": 7549,
+        "quality": "excellent"
+      },
+      "created_at": "2025-08-11T03:43:26Z"
+    },
+    {
+      "id": "natural_language_processing_detailed_1754883806",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you go deeper into the key concepts of Natural Language Processing?"
+        },
+        {
+          "role": "assistant",
+          "content": "Here's a deeper look at Natural Language Processing:\n\nThis article\nmay need to be rewritten\nto comply with Wikipedia's\nquality standards\n.\nYou can help . The talk page may contain suggestions. ( July 2025 )\nThis article\nmay be in need of reorganization to comply with Wikipedia's layout guidelines\n.\nPlease help by editing the article to make improvements to the overall structure. ( July 2025 ) ( Learn how and when to remove this message ) ( Learn how and when to remove this message ) Natural language processing\n(NLP) is the processing of\nnatural language\n\ninformation by a\ncomputer\n. The study of NLP, a subfield of\ncomputer science\n, is generally associated with\nartificial intelligence\n. NLP is related to\ninformation retrieval\n,\nknowledge representation\n,\ncomputational linguistics\n, and more broadly with\nlinguistics\n.\n[ 1 ]\nMajor processing tasks in an NLP system include:\nspeech recognition\n,\ntext classification\n,\nnatural language understanding\n, and\nnatural language generation\n.\nHistory\n[ edit ]\nFurther information:\nHistory of natural language processing\n\nNatural language processing has its roots in the 1950s.\n[ 2 ]\nAlready in 1950,\nAlan Turing\npublished an article titled \"\nComputing Machinery and Intelligence\n\" which proposed what is now called the\nTuring test\nas a criterion of intelligence, though at the time that was not articulated as a problem separate from artificial intelligence. The proposed test includes a task that involves the automated interpretation and generation of natural language.\nSymbolic NLP (1950s – early 1990s)\n[ edit ]\nThe premise of symbolic NLP is well-summarized by"
+        }
+      ],
+      "metadata": {
+        "difficulty": "intermediate",
+        "domain": "Technology",
+        "type": "detailed_explanation"
+      },
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Natural_language_processing",
+        "title": "Natural Language Processing",
+        "domain": "Technology",
+        "category": "AI",
+        "word_count": 7549,
+        "quality": "excellent"
+      },
+      "created_at": "2025-08-11T03:43:26Z"
+    },
+    {
+      "id": "natural_language_processing_qa_1754883806",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "What should I know about Natural Language Processing?"
+        },
+        {
+          "role": "assistant",
+          "content": "ALPAC report\nin 1966, which found that ten years of research had failed to fulfill the expectations, funding for machine translation was dramatically reduced. Little further research in machine translation was conducted in America (though some research continued elsewhere, such as Japan and Europe\n[ 4 ]\n) until the late 1980s when the first\nstatistical machine translation\nsystems were developed.\n1960s\n: Some notably successful natural language processing systems developed in the 1960s were\nSHRDLU\n, a natural language system working in restricted \"\nblocks worlds\n\" with restricted vocabularies, and\nELIZA\n, a simulation of a\nRogerian psychotherapist\n, written by\nJoseph Weizenbaum\nbetween 1964 and 1966. Using almost no information about human thought or emotion, ELIZA sometimes provided a startlingly human-like interaction. When the \"patient\" exceeded the very small knowledge base, ELIZA might provide a generic response, for example, responding to \"My head hurts\" with \"Why do you say your ..."
+        }
+      ],
+      "metadata": {
+        "difficulty": "applied",
+        "domain": "Technology",
+        "type": "question_answer"
+      },
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Natural_language_processing",
+        "title": "Natural Language Processing",
+        "domain": "Technology",
+        "category": "AI",
+        "word_count": 7549,
+        "quality": "excellent"
+      },
+      "created_at": "2025-08-11T03:43:26Z"
+    },
+    {
+      "id": "computer_science_intro_1754883813",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you explain Computer Science to me?"
+        },
+        {
+          "role": "assistant",
+          "content": "Let me explain Computer Science.\n\nJump to content\nFrom Wikipedia, the free encyclopedia\nStudy of computation\nFor other uses, see\nComputer science (disambiguation)\n.\nFundamental areas of computer science\nProgramming language theory Computer architecture Artificial intelligence Computational complexity theory Computer science History Outline Glossary Category v t e Computer science\nis the study of\ncomputation\n,\ninformation\n, and\nautomation\n.\n[ 1 ] [ 2 ] [ 3 ]\nComputer science spans\ntheoretical disciplines\n(such as\nalgorithms\n,\ntheory of computation"
+        }
+      ],
+      "metadata": {
+        "difficulty": "beginner",
+        "domain": "Technology",
+        "type": "introduction"
+      },
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Computer_science",
+        "title": "Computer Science",
+        "domain": "Technology",
+        "category": "CS",
+        "word_count": 8765,
+        "quality": "excellent"
+      },
+      "created_at": "2025-08-11T03:43:33Z"
+    },
+    {
+      "id": "computer_science_detailed_1754883813",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you go deeper into the key concepts of Computer Science?"
+        },
+        {
+          "role": "assistant",
+          "content": "Here's a deeper look at Computer Science:\n\n, and\ninformation theory\n) to\napplied disciplines\n(including the design and implementation of\nhardware\nand\nsoftware\n).\n[ 4 ] [ 5 ] [ 6 ]\nAlgorithms and\ndata structures\nare central to computer science.\n[ 7 ]\nThe theory of computation concerns abstract\nmodels of computation\nand general classes of\nproblems\nthat can be solved using them. The fields of\ncryptography\nand\ncomputer security\ninvolve studying the means for secure communication and preventing\nsecurity vulnerabilities\n.\nComputer graphics\nand\n\ncomputational geometry\naddress the generation of images.\nProgramming language theory\nconsiders different ways to describe computational processes, and\ndatabase\ntheory concerns the management of repositories of data.\nHuman–computer interaction\ninvestigates the interfaces through which humans and computers interact, and software engineering focuses on the design and principles behind developing software. Areas such as\noperating systems\n,\nnetworks\nand\nembedded systems\ninvestigate the principles and design behind\n\ncomplex systems\n. Computer architecture describes the construction of computer components and computer-operated equipment.\nArtificial intelligence\nand\nmachine learning\naim to synthesize goal-orientated processes such as problem-solving, decision-making, environmental adaptation,\nplanning\nand learning found in humans and animals. Within artificial intelligence,\ncomputer vision\naims to understand and process image and video data, while\nnatural language processing\naims to understand and process textual and linguistic data."
+        }
+      ],
+      "metadata": {
+        "difficulty": "intermediate",
+        "domain": "Technology",
+        "type": "detailed_explanation"
+      },
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Computer_science",
+        "title": "Computer Science",
+        "domain": "Technology",
+        "category": "CS",
+        "word_count": 8765,
+        "quality": "excellent"
+      },
+      "created_at": "2025-08-11T03:43:33Z"
+    },
+    {
+      "id": "computer_science_qa_1754883813",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "What should I know about Computer Science?"
+        },
+        {
+          "role": "assistant",
+          "content": "Modern concepts\nGeneral-purpose CPUs Graphical user interface Internet Laptops Personal computers Video games World Wide Web Cloud Quantum\nBy country\nBulgaria Eastern Bloc Poland Romania South America Soviet Union Yugoslavia Timeline of computing before 1950 1950–1979 1980–1989 1990–1999 2000–2009 2010–2019 2020–present more timelines ... Glossary of computer science Category v t e Gottfried Wilhelm Leibniz (1646–1716) developed logic in a binary number system and has been called the \"founder of computer science\". [ 13 ] Charles Babbage is sometimes referred to as the \"father of computing\". [ 14 ] Ada Lovelace published the first algorithm intended for processing on a computer. [ 15 ]\nThe earliest foundations of what would become computer science predate the invention of the modern\ndigital computer\n. Machines for calculating fixed numerical tasks such as the\nabacus\nhave existed since antiquity, aiding in computations such as multiplication and division.\nAlgorithms\nfor per..."
+        }
+      ],
+      "metadata": {
+        "difficulty": "applied",
+        "domain": "Technology",
+        "type": "question_answer"
+      },
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Computer_science",
+        "title": "Computer Science",
+        "domain": "Technology",
+        "category": "CS",
+        "word_count": 8765,
+        "quality": "excellent"
+      },
+      "created_at": "2025-08-11T03:43:33Z"
+    },
+    {
+      "id": "algorithms_intro_1754883820",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you explain Algorithms to me?"
+        },
+        {
+          "role": "assistant",
+          "content": "Let me explain Algorithms.\n\nJump to content\nFrom Wikipedia, the free encyclopedia\nSequence of operations for a task\n\"Algorithms\" redirects here. For the subfield of computer science, see\nAnalysis of algorithms\n. For other uses, see\nAlgorithm (disambiguation)\n.\n\"Algorythm\" redirects here. For the album, see\nBeyond Creation\n.\nFlowchart of using successive subtractions to find the greatest common divisor of number r and s\nIn\nmathematics\nand\ncomputer science\n, an\nalgorithm\n(\n/ ˈ æ l ɡ ə r ɪ ð əm / ⓘ\n) is a finite sequence of"
+        }
+      ],
+      "metadata": {
+        "difficulty": "beginner",
+        "domain": "Mathematics",
+        "type": "introduction"
+      },
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Algorithm",
+        "title": "Algorithms",
+        "domain": "Mathematics",
+        "category": "CS",
+        "word_count": 8113,
+        "quality": "excellent"
+      },
+      "created_at": "2025-08-11T03:43:40Z"
+    },
+    {
+      "id": "algorithms_detailed_1754883820",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you go deeper into the key concepts of Algorithms?"
+        },
+        {
+          "role": "assistant",
+          "content": "Here's a deeper look at Algorithms:\n\nmathematically rigorous\ninstructions, typically used to solve a class of specific\nproblems\nor to perform a\ncomputation\n.\n[ 1 ]\nAlgorithms are used as specifications for performing\ncalculations\nand\ndata processing\n. More advanced algorithms can use\nconditionals\nto divert the code execution through various routes (referred to as\nautomated decision-making\n) and deduce valid\ninferences\n(referred to as\nautomated reasoning\n).\nIn contrast, a\nheuristic\nis an approach to solving problems without well-defined correct or optimal results.\n\n[ 2 ]\nFor example, although social media\nrecommender systems\nare commonly called \"algorithms\", they actually rely on heuristics as there is no truly \"correct\" recommendation.\nAs an\neffective method\n, an algorithm can be expressed within a finite amount of space and time\n[ 3 ]\nand in a well-defined\nformal language [ 4 ]\nfor calculating a\nfunction\n.\n[ 5 ]\nStarting from an initial state and initial input (perhaps\nempty\n),\n[ 6 ]\nthe instructions describe a computation that, when\nexecuted\n, proceeds through a finite\n\n[ 7 ]\nnumber of well-defined successive states, eventually producing \"output\"\n[ 8 ]\nand terminating at a final ending state. The transition from one state to the next is not necessarily\ndeterministic\n; some algorithms, known as\nrandomized algorithms\n, incorporate random input.\n[ 9 ]\nEtymology\n[ edit ]\nAround 825 AD, Persian scientist and polymath\nMuḥammad ibn Mūsā al-Khwārizmī\nwrote\nkitāb al-ḥisāb al-hindī\n(\"Book of Indian computation\") and\nkitab al-jam' wa'l-tafriq al-ḥisāb al-hindī"
+        }
+      ],
+      "metadata": {
+        "difficulty": "intermediate",
+        "domain": "Mathematics",
+        "type": "detailed_explanation"
+      },
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Algorithm",
+        "title": "Algorithms",
+        "domain": "Mathematics",
+        "category": "CS",
+        "word_count": 8113,
+        "quality": "excellent"
+      },
+      "created_at": "2025-08-11T03:43:40Z"
+    },
+    {
+      "id": "algorithms_qa_1754883820",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "What should I know about Algorithms?"
+        },
+        {
+          "role": "assistant",
+          "content": "[ 2 ]\nThe word\nalgorism\nin English came to mean the use of place-value notation in calculations; it occurs in the\nAncrene Wisse\nfrom circa 1225.\n[ 11 ]\nBy the time\nGeoffrey Chaucer\nwrote\nThe Canterbury Tales\nin the late 14th century, he used a variant of the same word in describing\naugrym stones\n, stones used for place-value calculation.\n[ 12 ] [ 13 ]\nIn the 15th century, under the influence of the Greek word ἀριθμός (\narithmos\n, \"number\";\ncf.\n\"arithmetic\"), the Latin word was altered to\nalgorithmus\n.\n[ 14 ]\nBy 1596, this form of the word was used in English, as\nalgorithm\n, by\nThomas Hood\n.\n[ 15 ]\nDefinition\n[ edit ]\nFor a detailed presentation of the various points of view on the definition of \"algorithm\", see\nAlgorithm characterizations\n.\nOne informal definition is \"a set of rules that precisely defines a sequence of operations\",\n[ 16 ]\nwhich would include all\ncomputer programs\n(including programs that do not perform numeric calculations), and any prescribed\nbureaucratic\nproc..."
+        }
+      ],
+      "metadata": {
+        "difficulty": "applied",
+        "domain": "Mathematics",
+        "type": "question_answer"
+      },
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Algorithm",
+        "title": "Algorithms",
+        "domain": "Mathematics",
+        "category": "CS",
+        "word_count": 8113,
+        "quality": "excellent"
+      },
+      "created_at": "2025-08-11T03:43:40Z"
+    },
+    {
+      "id": "data_structures_intro_1754883827",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you explain Data Structures to me?"
+        },
+        {
+          "role": "assistant",
+          "content": "Let me explain Data Structures.\n\nJump to content\nFrom Wikipedia, the free encyclopedia\nParticular way of storing and organizing data in a computer\nNot to be confused with Data type or Data model . A data structure known as a hash table .\nIn\ncomputer science\n, a\ndata structure\nis a\ndata\norganization and storage format that is usually chosen for\nefficient access\nto data.\n[ 1 ] [ 2 ] [ 3 ]\nMore precisely, a data structure is a collection of data values, the relationships among them, and the\nfunctions\nor\noperations\nthat can be applied to the data,"
+        }
+      ],
+      "metadata": {
+        "difficulty": "beginner",
+        "domain": "Mathematics",
+        "type": "introduction"
+      },
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Data_structure",
+        "title": "Data Structures",
+        "domain": "Mathematics",
+        "category": "CS",
+        "word_count": 2478,
+        "quality": "high"
+      },
+      "created_at": "2025-08-11T03:43:47Z"
+    },
+    {
+      "id": "data_structures_detailed_1754883827",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you go deeper into the key concepts of Data Structures?"
+        },
+        {
+          "role": "assistant",
+          "content": "Here's a deeper look at Data Structures:\n\n[ 4 ]\ni.e., it is an\nalgebraic structure\nabout\ndata\n.\nUsage\n[ edit ]\nData structures serve as the basis for\nabstract data types\n(ADT). The ADT defines the logical form of the data type. The data structure implements the physical form of the\ndata type\n.\n[ 5 ]\nDifferent types of data structures are suited to different kinds of applications, and some are highly specialized to specific tasks. For example,\nrelational databases\ncommonly use\nB-tree\nindexes for data retrieval,\n[ 6 ]\nwhile\ncompiler implementations\n\nusually use\nhash tables\nto look up\nidentifiers\n.\n[ 7 ]\nData structures provide a means to manage large amounts of data efficiently for uses such as large\ndatabases\nand internet indexing services. Usually, efficient data structures are key to designing efficient\nalgorithms\n. Some formal design methods and\nprogramming languages\nemphasize data structures, rather than algorithms, as the key organizing factor in software design. Data structures can be used to organize the storage and retrieval of information stored in both\n\nmain memory\nand\nsecondary memory\n.\n[ 8 ]\nImplementation\n[ edit ]\nData structures can be implemented using a variety of programming languages and techniques, but they all share the common goal of efficiently organizing and storing data.\n[ 9 ]\nData structures are generally based on the ability of a\ncomputer\nto fetch and store data at any place in its memory, specified by a\npointer\n—a\nbit string\n, representing a\nmemory address\n, that can be itself stored in memory and manipulated by the program. Thus, the"
+        }
+      ],
+      "metadata": {
+        "difficulty": "intermediate",
+        "domain": "Mathematics",
+        "type": "detailed_explanation"
+      },
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Data_structure",
+        "title": "Data Structures",
+        "domain": "Mathematics",
+        "category": "CS",
+        "word_count": 2478,
+        "quality": "high"
+      },
+      "created_at": "2025-08-11T03:43:47Z"
+    },
+    {
+      "id": "data_structures_qa_1754883827",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "What should I know about Data Structures?"
+        },
+        {
+          "role": "assistant",
+          "content": "[ 10 ]\nThe implementation of a data structure usually requires writing a set of\nprocedures\nthat create and manipulate instances of that structure. The efficiency of a data structure cannot be analyzed separately from those operations. This observation motivates the theoretical concept of an\nabstract data type\n, a data structure that is defined indirectly by the operations that may be performed on it, and the mathematical properties of those operations (including their space and time cost).\n[ 11 ]\nExamples\n[ edit ]\nMain article:\nList of data structures The standard type hierarchy of the programming language Python 3 .\nThere are numerous types of data structures, generally built upon simpler\nprimitive data types\n. Well known examples are:\n[ 12 ]\nAn\narray\nis a number of elements in a specific order, typically all of the same type (depending on the language, individual elements may either all be forced to be the same type, or may be of almost any type). Elements are accessed using an integ..."
+        }
+      ],
+      "metadata": {
+        "difficulty": "applied",
+        "domain": "Mathematics",
+        "type": "question_answer"
+      },
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Data_structure",
+        "title": "Data Structures",
+        "domain": "Mathematics",
+        "category": "CS",
+        "word_count": 2478,
+        "quality": "high"
+      },
+      "created_at": "2025-08-11T03:43:47Z"
+    },
+    {
+      "id": "computational_complexity_intro_1754883834",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you explain Computational Complexity to me?"
+        },
+        {
+          "role": "assistant",
+          "content": "Let me explain Computational Complexity.\n\nJump to content\nFrom Wikipedia, the free encyclopedia\nInherent difficulty of computational problems\nIn\ntheoretical computer science\nand mathematics,\ncomputational complexity theory\nfocuses on classifying\ncomputational problems\naccording to their resource usage, and explores the relationships between these classifications. A computational problem is a task solved by a computer. A computation problem is solvable by mechanical application of mathematical steps, such as an\nalgorithm\n.\nA problem is regarded as inherently difficult if its solution requires significant resources, whatever the algorithm used. The theory formalizes this intuition, by introducing mathematical"
+        }
+      ],
+      "metadata": {
+        "difficulty": "beginner",
+        "domain": "Mathematics",
+        "type": "introduction"
+      },
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Computational_complexity_theory",
+        "title": "Computational Complexity",
+        "domain": "Mathematics",
+        "category": "CS",
+        "word_count": 7962,
+        "quality": "excellent"
+      },
+      "created_at": "2025-08-11T03:43:54Z"
+    },
+    {
+      "id": "computational_complexity_detailed_1754883834",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you go deeper into the key concepts of Computational Complexity?"
+        },
+        {
+          "role": "assistant",
+          "content": "Here's a deeper look at Computational Complexity:\n\nmodels of computation\nto study these problems and quantifying their\ncomputational complexity\n, i.e., the amount of resources needed to solve them, such as time and storage. Other measures of complexity are also used, such as the amount of communication (used in\ncommunication complexity\n), the number of\ngates\nin a circuit (used in\ncircuit complexity\n) and the number of processors (used in\nparallel computing\n). One of the roles of computational complexity theory is to determine the practical limits on what computers can and cannot do. The\n\nP versus NP problem\n, one of the seven\nMillennium Prize Problems\n,\n[ 1 ]\nis part of the field of computational complexity.\nClosely related fields in\ntheoretical computer science\nare\nanalysis of algorithms\nand\ncomputability theory\n. A key distinction between analysis of algorithms and computational complexity theory is that the former is devoted to analyzing the amount of resources needed by a particular algorithm to solve a problem, whereas the latter asks a more general question about all possible algorithms that could be used to solve the same problem. More precisely, computational complexity theory tries to classify problems that can or cannot be solved with appropriately restricted resources. In turn, imposing restrictions on the available resources is what distinguishes computational ...\n\nComputational problems\n[ edit ] A traveling salesman tour through 14 German cities\nProblem instances\n[ edit ]\nA\ncomputational problem\ncan be viewed as an infinite collection of\ninstances\ntogether with a set (possibly empty) of\nsolutions\nfor every instance. The input string for a computational problem is referred to as a problem instance, and should not be confused with the problem itself. In computational complexity theory, a problem refers to the abstract question to be solved. In contrast, an instance of this problem is a rather concrete utterance, which can serve as the input for a decision problem. For example, consider the problem of"
+        }
+      ],
+      "metadata": {
+        "difficulty": "intermediate",
+        "domain": "Mathematics",
+        "type": "detailed_explanation"
+      },
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Computational_complexity_theory",
+        "title": "Computational Complexity",
+        "domain": "Mathematics",
+        "category": "CS",
+        "word_count": 7962,
+        "quality": "excellent"
+      },
+      "created_at": "2025-08-11T03:43:54Z"
+    },
+    {
+      "id": "computational_complexity_qa_1754883834",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why is Computational Complexity important?"
+        },
+        {
+          "role": "assistant",
+          "content": "Milan\nwhose total length is at most 10 km. For this reason, complexity theory addresses computational problems and not particular problem instances.\nRepresenting problem instances\n[ edit ]\nWhen considering computational problems, a problem instance is a\nstring\nover an\nalphabet\n. Usually, the alphabet is taken to be the binary alphabet (i.e., the set {0,1}), and thus the strings are\nbitstrings\n. As in a real-world\ncomputer\n, mathematical objects other than bitstrings must be suitably encoded. For example,\nintegers\ncan be represented in\nbinary notation\n, and\ngraphs\ncan be encoded directly via their\nadjacency matrices\n, or by encoding their\nadjacency lists\nin binary.\nEven though some proofs of complexity-theoretic theorems regularly assume some concrete choice of input encoding, one tries to keep the discussion abstract enough to be independent of the choice of encoding. This can be achieved by ensuring that different representations can be transformed into each other efficiently.\nDecisio..."
+        }
+      ],
+      "metadata": {
+        "difficulty": "applied",
+        "domain": "Mathematics",
+        "type": "question_answer"
+      },
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Computational_complexity_theory",
+        "title": "Computational Complexity",
+        "domain": "Mathematics",
+        "category": "CS",
+        "word_count": 7962,
+        "quality": "excellent"
+      },
+      "created_at": "2025-08-11T03:43:54Z"
+    },
+    {
+      "id": "software_engineering_intro_1754883841",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you explain Software Engineering to me?"
+        },
+        {
+          "role": "assistant",
+          "content": "Let me explain Software Engineering.\n\nJump to content\nFrom Wikipedia, the free encyclopedia\nEngineering approach to software development\nPart of a series on\nSoftware development\nCore activities\nData modeling Processes Requirements Design Construction Engineering Testing Debugging Deployment Maintenance\nParadigms and models\nAgile Cleanroom Incremental Prototyping Spiral V model Waterfall Methodologies\nand frameworks\nASD DAD DevOps DSDM FDD IID Kanban Lean SD LeSS MDD MSF PSP RAD RUP SAFe Scrum SEMAT TDD TSP UP XP\nSupporting disciplines"
+        }
+      ],
+      "metadata": {
+        "difficulty": "beginner",
+        "domain": "Engineering",
+        "type": "introduction"
+      },
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Software_engineering",
+        "title": "Software Engineering",
+        "domain": "Engineering",
+        "category": "Software",
+        "word_count": 8374,
+        "quality": "excellent"
+      },
+      "created_at": "2025-08-11T03:44:01Z"
+    },
+    {
+      "id": "software_engineering_detailed_1754883841",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you go deeper into the key concepts of Software Engineering?"
+        },
+        {
+          "role": "assistant",
+          "content": "Here's a deeper look at Software Engineering:\n\nConfiguration management Deployment management Documentation Project management Quality assurance User experience\nPractices\nATDD BDD CCO CD CI DDD PP SBE Stand-up TDD Tools Build automation Compiler Debugger GUI builder IDE Infrastructure as code Profiler Release automation UML Modeling\nStandards and bodies of knowledge\nCMMI IEEE standards IREB ISO 9001 ISO/IEC standards ITIL OMG PMBOK SWEBOK\nGlossaries\nArtificial intelligence Computer science Electrical and electronics engineering\nOutlines\nOutline of software development v t e Software engineering\n\nis a branch of both\ncomputer science\nand\nengineering\nfocused on designing, developing, testing, and maintaining\nsoftware applications\n.\n[ 1 ]\nIt involves applying\nengineering principles\nand\ncomputer programming\nexpertise to develop software systems that meet user needs.\n[ 2 ] [ 3 ] [ 4 ] [ 5 ]\nThe terms\nprogrammer\nand\ncoder\noverlap\nsoftware engineer\n, but they imply only the construction aspect of a typical software engineer workload.\n[ 6 ]\nA software engineer applies a\nsoftware development process\n\n,\n[ 2 ] [ 7 ]\nwhich involves defining,\nimplementing\n,\ntesting\n,\nmanaging\n, and\nmaintaining\nsoftware systems, as well as developing the software development process itself.\nHistory\n[ edit ]\nMain article:\nHistory of software engineering\nBeginning in the 1960s, software engineering was recognized as a separate field of\nengineering\n.\n[ 8 ]\nThe development of software engineering was seen as a struggle. Problems included software that was over budget, exceeded deadlines, required extensive\ndebugging\nand maintenance, and unsuccessfully met the needs of consumers or was never even completed."
+        }
+      ],
+      "metadata": {
+        "difficulty": "intermediate",
+        "domain": "Engineering",
+        "type": "detailed_explanation"
+      },
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Software_engineering",
+        "title": "Software Engineering",
+        "domain": "Engineering",
+        "category": "Software",
+        "word_count": 8374,
+        "quality": "excellent"
+      },
+      "created_at": "2025-08-11T03:44:01Z"
+    },
+    {
+      "id": "software_engineering_qa_1754883841",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "What should I know about Software Engineering?"
+        },
+        {
+          "role": "assistant",
+          "content": "[ 11 ] [ 12 ] [ 13 ]\nIt is also associated with the title of a NATO conference in 1968 by Professor\nFriedrich L. Bauer\n.\n[ 14 ] Margaret Hamilton\ndescribed the discipline of \"software engineering\" during the Apollo missions to give what they were doing legitimacy.\n[ 15 ]\nAt the time, there was perceived to be a \"\nsoftware crisis\n\".\n[ 16 ] [ 17 ] [ 18 ]\nThe 40th International Conference on Software Engineering (ICSE 2018) celebrates 50 years of \"Software Engineering\" with the Plenary Sessions' keynotes of\nFrederick Brooks [ 19 ]\nand\nMargaret Hamilton\n.\n[ 20 ]\nIn 1984, the\nSoftware Engineering Institute\n(SEI) was established as a federally funded research and development center headquartered on the campus of\nCarnegie Mellon University\nin\nPittsburgh, Pennsylvania\n, United States.\n[ 21 ] Watts Humphrey\nfounded the SEI Software Process Program, aimed at understanding and managing the software engineering process.\n[ 21 ]\nThe Process Maturity Levels introduced became the\nCapability Maturity M..."
+        }
+      ],
+      "metadata": {
+        "difficulty": "applied",
+        "domain": "Engineering",
+        "type": "question_answer"
+      },
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Software_engineering",
+        "title": "Software Engineering",
+        "domain": "Engineering",
+        "category": "Software",
+        "word_count": 8374,
+        "quality": "excellent"
+      },
+      "created_at": "2025-08-11T03:44:01Z"
+    },
+    {
+      "id": "design_patterns_intro_1754883848",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you explain Design Patterns to me?"
+        },
+        {
+          "role": "assistant",
+          "content": "Let me explain Design Patterns.\n\nJump to content\nFrom Wikipedia, the free encyclopedia\nRe-usable form of a solution to a design problem\n\"Design patterns\" redirects here. For the book, see\nDesign Patterns\n.\nThis article is about a relatively general design concept. For application for software development, see\nSoftware design pattern\n.\nA\ndesign pattern\nis the re-usable form of a solution to a design problem. The idea was introduced by the architect\nChristopher Alexander [ 1 ]\nand has been adapted for various other disciplines, particularly"
+        }
+      ],
+      "metadata": {
+        "difficulty": "beginner",
+        "domain": "Engineering",
+        "type": "introduction"
+      },
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Design_pattern",
+        "title": "Design Patterns",
+        "domain": "Engineering",
+        "category": "Software",
+        "word_count": 1463,
+        "quality": "medium"
+      },
+      "created_at": "2025-08-11T03:44:08Z"
+    },
+    {
+      "id": "design_patterns_detailed_1754883848",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you go deeper into the key concepts of Design Patterns?"
+        },
+        {
+          "role": "assistant",
+          "content": "Here's a deeper look at Design Patterns:\n\nsoftware engineering\n.\n[ 2 ]\nDetails\n[ edit ]\nFurther information:\nPattern language\nAn organized collection of design patterns that relate to a particular field is called a\npattern language\n. This language gives a common terminology for discussing the situations designers are faced with.\nThe elements of this language are entities called patterns. Each pattern describes a problem that occurs over and over again in our environment, and then describes the core of the solution to that problem, in such a way that you can use this solution a million times over, without ever doing it the same way twice.\n\n— Christopher Alexander,\nA Pattern Language [ 1 ]\nDocumenting a pattern requires explaining why a particular situation causes problems, and how the components of the pattern relate to each other to give the solution.\n[ 3 ] Christopher Alexander\ndescribes common design problems as arising from \"conflicting forces\"—such as the conflict between wanting a room to be sunny and wanting it not to overheat on summer afternoons. A pattern would not tell the designer how many windows to put in the room; instead, it would propose a set of values to guide the designer toward a decision that is best for their particular application. Alexander, for example, suggests that enough windows should be included to direct light all around the room. He considers this a good solution because he believes it in...\n\nPattern documentation should also explain when it is applicable. Since two houses may be very different from one another, a design pattern for houses must be broad enough to apply to both of them, but not so vague that it doesn't help the designer make decisions. The range of situations in which a pattern can be used is called its context. Some examples might be \"all houses\", \"all two-story houses\", or \"all places where people spend time\".\nFor instance, in Christopher Alexander's work, bus stops and waiting rooms in a surgery center are both within the context for the pattern \"A PLACE TO WAIT\"."
+        }
+      ],
+      "metadata": {
+        "difficulty": "intermediate",
+        "domain": "Engineering",
+        "type": "detailed_explanation"
+      },
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Design_pattern",
+        "title": "Design Patterns",
+        "domain": "Engineering",
+        "category": "Software",
+        "word_count": 1463,
+        "quality": "medium"
+      },
+      "created_at": "2025-08-11T03:44:08Z"
+    },
+    {
+      "id": "design_patterns_qa_1754883848",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "What should I know about Design Patterns?"
+        },
+        {
+          "role": "assistant",
+          "content": "— Christopher Alexander,\nA Pattern Language [ 1 ]\nDocumenting a pattern requires explaining why a particular situation causes problems, and how the components of the pattern relate to each other to give the solution.\n[ 3 ] Christopher Alexander\ndescribes common design problems as arising from \"conflicting forces\"—such as the conflict between wanting a room to be sunny and wanting it not to overheat on summer afternoons. A pattern would not tell the designer how many windows to put in the room; instead, it would propose a set of values to guide the designer toward a decision that is best for their particular application. Alexander, for example, suggests that enough windows should be included to direct light all around the room. He considers this a good solution because he believes it increases the enjoyment of the room by its occupants. Other authors might come to different conclusions, if they place higher value on heating costs, or material costs. These values, used by the pattern..."
+        }
+      ],
+      "metadata": {
+        "difficulty": "applied",
+        "domain": "Engineering",
+        "type": "question_answer"
+      },
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Design_pattern",
+        "title": "Design Patterns",
+        "domain": "Engineering",
+        "category": "Software",
+        "word_count": 1463,
+        "quality": "medium"
+      },
+      "created_at": "2025-08-11T03:44:08Z"
+    },
+    {
+      "id": "test-driven_development_intro_1754883855",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you explain Test-Driven Development to me?"
+        },
+        {
+          "role": "assistant",
+          "content": "Let me explain Test-Driven Development.\n\nJump to content\nFrom Wikipedia, the free encyclopedia\nMethod of writing code\nPart of a series on\nSoftware development\nCore activities\nData modeling Processes Requirements Design Construction Engineering Testing Debugging Deployment Maintenance\nParadigms and models\nAgile Cleanroom Incremental Prototyping Spiral V model Waterfall Methodologies\nand frameworks\nASD DAD DevOps DSDM FDD IID Kanban Lean SD LeSS MDD MSF PSP RAD RUP SAFe Scrum SEMAT TDD TSP UP XP\nSupporting disciplines\nConfiguration management Deployment management Documentation Project management Quality assurance User experience"
+        }
+      ],
+      "metadata": {
+        "difficulty": "beginner",
+        "domain": "Engineering",
+        "type": "introduction"
+      },
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Test-driven_development",
+        "title": "Test-Driven Development",
+        "domain": "Engineering",
+        "category": "Software",
+        "word_count": 6062,
+        "quality": "excellent"
+      },
+      "created_at": "2025-08-11T03:44:15Z"
+    },
+    {
+      "id": "test-driven_development_detailed_1754883855",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you go deeper into the key concepts of Test-Driven Development?"
+        },
+        {
+          "role": "assistant",
+          "content": "Here's a deeper look at Test-Driven Development:\n\nPractices\nATDD BDD CCO CD CI DDD PP SBE Stand-up TDD Tools Build automation Compiler Debugger GUI builder IDE Infrastructure as code Profiler Release automation UML Modeling\nStandards and bodies of knowledge\nCMMI IEEE standards IREB ISO 9001 ISO/IEC standards ITIL OMG PMBOK SWEBOK\nGlossaries\nArtificial intelligence Computer science Electrical and electronics engineering\nOutlines\nOutline of software development v t e Test-driven development\n(\nTDD\n) is a way of writing\ncode\nthat involves writing an\n\nautomated unit-level test case\nthat fails, then writing just enough code to make the test pass, then\nrefactoring\nboth the test code and the production code, then repeating with another new test case.\nAlternative approaches to writing automated tests is to write all of the production code before starting on the test code or to write all of the test code before starting on the production code. With TsDD, both are written together, therefore shortening debugging time necessities.\n[ 1 ]\nTDD is related to the test-first programming concepts of\n\nextreme programming\n, begun in 1999,\n[ 2 ]\nbut more recently has created more general interest in its own right.\n[ 3 ]\nProgrammers also apply the concept to improving and\ndebugging legacy code\ndeveloped with older techniques.\n[ 4 ]\nHistory\n[ edit ]\nSoftware engineer\nKent Beck\n, who is credited with having developed or \"rediscovered\"\n[ 5 ]\nthe technique, stated in 2003 that TDD encourages simple designs and inspires confidence.\n[ 6 ]\nThe original description of TDD was in an ancient book about programming. It said you take the input tape, manually type in the output tape you expect, then program until the actual output tape matches the expected output. After I'd written the first xUnit framework in"
+        }
+      ],
+      "metadata": {
+        "difficulty": "intermediate",
+        "domain": "Engineering",
+        "type": "detailed_explanation"
+      },
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Test-driven_development",
+        "title": "Test-Driven Development",
+        "domain": "Engineering",
+        "category": "Software",
+        "word_count": 6062,
+        "quality": "excellent"
+      },
+      "created_at": "2025-08-11T03:44:15Z"
+    },
+    {
+      "id": "test-driven_development_qa_1754883855",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "What should I know about Test-Driven Development?"
+        },
+        {
+          "role": "assistant",
+          "content": "Smalltalk\nI remembered reading this and tried it out. That was the origin of TDD for me. When describing TDD to older programmers, I often hear, \"Of course. How else could you program?\" Therefore I refer to my role as \"rediscovering\" TDD.\n—\nKent Beck\n, \"Why does Kent Beck refer to the 'rediscovery' of test-driven development? What's the history of test-driven development before Kent Beck's rediscovery?\"\n[ 7 ]\nCoding cycle\n[ edit ] A graphical representation of the test-driven development lifecycle"
+        }
+      ],
+      "metadata": {
+        "difficulty": "applied",
+        "domain": "Engineering",
+        "type": "question_answer"
+      },
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Test-driven_development",
+        "title": "Test-Driven Development",
+        "domain": "Engineering",
+        "category": "Software",
+        "word_count": 6062,
+        "quality": "excellent"
+      },
+      "created_at": "2025-08-11T03:44:15Z"
+    },
+    {
+      "id": "agile_development_intro_1754883862",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you explain Agile Development to me?"
+        },
+        {
+          "role": "assistant",
+          "content": "Let me explain Agile Development.\n\nJump to content\nFrom Wikipedia, the free encyclopedia\nUmbrella term for certain approaches to software development\nPart of a series on\nSoftware development\nCore activities\nData modeling Processes Requirements Design Construction Engineering Testing Debugging Deployment Maintenance\nParadigms and models\nAgile Cleanroom Incremental Prototyping Spiral V model Waterfall Methodologies\nand frameworks\nASD DAD DevOps DSDM FDD IID Kanban Lean SD LeSS MDD MSF PSP RAD RUP SAFe Scrum SEMAT TDD TSP UP XP\nSupporting disciplines"
+        }
+      ],
+      "metadata": {
+        "difficulty": "beginner",
+        "domain": "Engineering",
+        "type": "introduction"
+      },
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Agile_software_development",
+        "title": "Agile Development",
+        "domain": "Engineering",
+        "category": "Software",
+        "word_count": 12176,
+        "quality": "excellent"
+      },
+      "created_at": "2025-08-11T03:44:22Z"
+    },
+    {
+      "id": "agile_development_detailed_1754883862",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you go deeper into the key concepts of Agile Development?"
+        },
+        {
+          "role": "assistant",
+          "content": "Here's a deeper look at Agile Development:\n\nConfiguration management Deployment management Documentation Project management Quality assurance User experience\nPractices\nATDD BDD CCO CD CI DDD PP SBE Stand-up TDD Tools Build automation Compiler Debugger GUI builder IDE Infrastructure as code Profiler Release automation UML Modeling\nStandards and bodies of knowledge\nCMMI IEEE standards IREB ISO 9001 ISO/IEC standards ITIL OMG PMBOK SWEBOK\nGlossaries\nArtificial intelligence Computer science Electrical and electronics engineering\nOutlines\nOutline of software development v t e Agile software development\n\nis an umbrella term for approaches to\ndeveloping software\nthat reflect the values and principles agreed upon by\nThe Agile Alliance\n, a group of 17 software practitioners, in 2001.\n[ 1 ]\nAs documented in their\nManifesto for Agile Software Development\nthe practitioners value:\n[ 2 ]\nIndividuals and interactions over processes and tools\nWorking software over comprehensive documentation\nCustomer collaboration over contract negotiation\nResponding to change over following a plan\nThe practitioners cite inspiration from new practices at the time including\n\nextreme programming\n,\nscrum\n,\ndynamic systems development method\n,\nadaptive software development\n, and being sympathetic to the need for an alternative to documentation-driven, heavyweight software development processes.\n[ 3 ]\nMany software development practices emerged from the agile mindset. These agile-based practices, sometimes called\nAgile\n(with a capital A),\n[ 4 ]\ninclude requirements, discovery, and solutions improvement through the collaborative effort of\nself-organizing\nand\ncross-functional"
+        }
+      ],
+      "metadata": {
+        "difficulty": "intermediate",
+        "domain": "Engineering",
+        "type": "detailed_explanation"
+      },
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Agile_software_development",
+        "title": "Agile Development",
+        "domain": "Engineering",
+        "category": "Software",
+        "word_count": 12176,
+        "quality": "excellent"
+      },
+      "created_at": "2025-08-11T03:44:22Z"
+    },
+    {
+      "id": "agile_development_qa_1754883862",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "What should I know about Agile Development?"
+        },
+        {
+          "role": "assistant",
+          "content": "[ 14 ]\nDuring the 1990s, a number of\nlightweight\nsoftware development methods evolved in reaction to the prevailing\nheavyweight\nmethods (often referred to collectively as\nwaterfall\n) that critics described as overly regulated, planned, and\nmicromanaged\n.\n[ 15 ]\nThese lightweight methods included:\nrapid application development\n(RAD), from 1991;\n[ 16 ] [ 17 ]\nthe\nunified process\n(UP) and\ndynamic systems development method\n(DSDM), both from 1994;\nScrum\n, from 1995; Crystal Clear and\nextreme programming\n(XP), both from 1996; and\nfeature-driven development\n(FDD), from 1997. Although these all originated before the publication of the\nAgile Manifesto\n, they are now collectively referred to as agile software development methods.\n[ 3 ]\nAlready since 1991 similar changes had been underway in\nmanufacturing [ 18 ] [ 19 ]\nand\nmanagement thinking [ 20 ]\nderived from\nLean management\n.\nIn 2001, seventeen software developers met at a resort in\nSnowbird\n,\nUtah\nto discuss lightweight development methods...."
+        }
+      ],
+      "metadata": {
+        "difficulty": "applied",
+        "domain": "Engineering",
+        "type": "question_answer"
+      },
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Agile_software_development",
+        "title": "Agile Development",
+        "domain": "Engineering",
+        "category": "Software",
+        "word_count": 12176,
+        "quality": "excellent"
+      },
+      "created_at": "2025-08-11T03:44:22Z"
+    }
+  ],
+  "metadata": {
+    "name": "High-Quality Re-scraped Dataset",
+    "description": "Properly extracted content with meaningful conversations",
+    "version": "2.0.0",
+    "total_items": 33,
+    "domains": "Programming, Technology, Mathematics, Engineering",
+    "purpose": "High-quality LLM training with properly extracted content"
+  },
+  "generated_at": "2025-08-11T03:44:22Z"
+}

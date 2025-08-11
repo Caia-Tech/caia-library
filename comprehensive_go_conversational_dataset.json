@@ -1,0 +1,1702 @@
+{
+  "dataset": [
+    {
+      "id": "go_documentation_hub_overview_1754828182",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you explain what Go Documentation Hub covers? I'm looking at the Go documentation."
+        },
+        {
+          "role": "assistant",
+          "content": "I'd be happy to explain Go Documentation Hub!\n\nMain documentation portal\n\nHere's what it covers:\n\nLearn\n          \n        \n        \n          \n            Docs navigate_next"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "documentation",
+          "hub"
+        ],
+        "section": "introduction",
+        "type": "overview"
+      },
+      "source": {
+        "url": "https://golang.org/doc/",
+        "title": "Go Documentation Hub",
+        "category": "Core Documentation",
+        "description": "Main documentation portal",
+        "word_count": 1928,
+        "quality_tier": "medium"
+      },
+      "created_at": "2025-08-10T12:16:22Z"
+    },
+    {
+      "id": "go_documentation_hub_detailed_1754828183",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "I need detailed information about go documentation hub. Can you walk me through the key concepts?"
+        },
+        {
+          "role": "assistant",
+          "content": "Let me walk you through Go Documentation Hub in detail.\n\nDocumentation - The Go Programming Language\nSkip to Main Content\nWhy Go arrow_drop_down\nPress Enter to activate/deactivate dropdown\nCase Studies\nCommon problems companies solve with Go\nUse Cases\nStories about how and why companies use Go\nSecurity\nHow Go can help keep you secure by default\nLearn\nPress Enter to activate/deactivate dropdown\nDocs arrow_drop_down\nPress Enter to activate/deactivate dropdown\nGo Spec\nThe official Go language specification\nGo User Manual\nA complete introduction to building software with Go\nStandard library\nReference documentation for Go\u0026#39;s standard library\nRelease Notes\nLearn what\u0026#39;s new in each Go release\nEffective Go\nTips for writing clear, performant, and idiomatic Go code\nPackages\nPress Enter to activate/deactivate dropdown\nCommunity arrow_drop_down\nPress Enter to activate/deactivate dropdown\nRecorded Talks\nVideos from prior events\nMeetups\nopen_in_new\nMeet other local Go developers\nConferences\nopen_in_new\nLearn and network with Go developers from around the world\nGo blog\nThe Go project\u0026#39;s official blog.\nGo project\nGet help and stay informed from Go\nGet connected\nWhy Go navigate_next\nnavigate_beforeWhy Go\nCase Studies\nUse Cases\nSecurity\nLearn\nDocs navigate_next\nnavigate_beforeDocs\nGo Spec\nGo User Manual\nStandard library\nRelease Notes\nEffective Go\nPackages\nCommunity navigate_next\nnavigate_beforeCommunity\nRecorded Talks\nMeetups\nopen_in_new\nConferences\nopen_in_new\nGo blog\nGo project\nGet connected\nDocumentation\nThe Go programming language is a\n\n[This covers the main concepts - there's additional detail in the full documentation]"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "documentation",
+          "hub",
+          "go",
+          "golang",
+          "package",
+          "function",
+          "module",
+          "interface",
+          "struct",
+          "error",
+          "test"
+        ],
+        "section": "main_content",
+        "type": "detailed_explanation"
+      },
+      "source": {
+        "url": "https://golang.org/doc/",
+        "title": "Go Documentation Hub",
+        "category": "Core Documentation",
+        "description": "Main documentation portal",
+        "word_count": 1928,
+        "quality_tier": "medium"
+      },
+      "created_at": "2025-08-10T12:16:22Z"
+    },
+    {
+      "id": "go_documentation_hub_reference_1754828184",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you give me a quick reference or summary of the main points in Go Documentation Hub?"
+        },
+        {
+          "role": "assistant",
+          "content": "Here's a quick reference for Go Documentation Hub:\n\n• Tutorial: Getting started\n• Tutorial: Create a module\n• Tutorial: Getting started with multi-module workspaces\n• Tutorial: Developing a RESTful API with Go and Gin\n• Tutorial: Getting started with generics\n• Tutorial: Getting started with fuzzing\n• learned. You can take the tour online or install it locally with:\n"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "documentation",
+          "hub",
+          "go",
+          "golang",
+          "package",
+          "function",
+          "module",
+          "interface",
+          "struct",
+          "error",
+          "test"
+        ],
+        "section": "summary",
+        "type": "quick_reference"
+      },
+      "source": {
+        "url": "https://golang.org/doc/",
+        "title": "Go Documentation Hub",
+        "category": "Core Documentation",
+        "description": "Main documentation portal",
+        "word_count": 1928,
+        "quality_tier": "medium"
+      },
+      "created_at": "2025-08-10T12:16:22Z"
+    },
+    {
+      "id": "go_documentation_hub_examples_1754828185",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Do you have code examples for go documentation hub? I learn better with practical examples."
+        },
+        {
+          "role": "assistant",
+          "content": "Here are code examples from Go Documentation Hub:\n\n```go\npackage function\n```\n\n"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "documentation",
+          "hub",
+          "go",
+          "golang",
+          "package",
+          "function",
+          "module",
+          "interface",
+          "struct",
+          "error",
+          "test",
+          "examples",
+          "code",
+          "tutorial"
+        ],
+        "section": "examples",
+        "type": "code_examples"
+      },
+      "source": {
+        "url": "https://golang.org/doc/",
+        "title": "Go Documentation Hub",
+        "category": "Core Documentation",
+        "description": "Main documentation portal",
+        "word_count": 1928,
+        "quality_tier": "medium"
+      },
+      "created_at": "2025-08-10T12:16:22Z"
+    },
+    {
+      "id": "effective_go_overview_1754828182",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you explain what Effective Go covers? I'm looking at the Go documentation."
+        },
+        {
+          "role": "assistant",
+          "content": "I'd be happy to explain Effective Go!\n\nEssential guide to writing idiomatic Go code\n\nHere's what it covers:\n\nLearn\n          \n        \n        \n          \n            Docs navigate_next"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "effective",
+          "go"
+        ],
+        "section": "introduction",
+        "type": "overview"
+      },
+      "source": {
+        "url": "https://golang.org/doc/effective_go",
+        "title": "Effective Go",
+        "category": "Core Documentation",
+        "description": "Essential guide to writing idiomatic Go code",
+        "word_count": 16570,
+        "quality_tier": "medium"
+      },
+      "created_at": "2025-08-10T12:16:22Z"
+    },
+    {
+      "id": "effective_go_detailed_1754828183",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "I need detailed information about effective go. Can you walk me through the key concepts?"
+        },
+        {
+          "role": "assistant",
+          "content": "Let me walk you through Effective Go in detail.\n\nEffective Go - The Go Programming Language\nSkip to Main Content\nWhy Go arrow_drop_down\nPress Enter to activate/deactivate dropdown\nCase Studies\nCommon problems companies solve with Go\nUse Cases\nStories about how and why companies use Go\nSecurity\nHow Go can help keep you secure by default\nLearn\nPress Enter to activate/deactivate dropdown\nDocs arrow_drop_down\nPress Enter to activate/deactivate dropdown\nGo Spec\nThe official Go language specification\nGo User Manual\nA complete introduction to building software with Go\nStandard library\nReference documentation for Go\u0026#39;s standard library\nRelease Notes\nLearn what\u0026#39;s new in each Go release\nEffective Go\nTips for writing clear, performant, and idiomatic Go code\nPackages\nPress Enter to activate/deactivate dropdown\nCommunity arrow_drop_down\nPress Enter to activate/deactivate dropdown\nRecorded Talks\nVideos from prior events\nMeetups\nopen_in_new\nMeet other local Go developers\nConferences\nopen_in_new\nLearn and network with Go developers from around the world\nGo blog\nThe Go project\u0026#39;s official blog.\nGo project\nGet help and stay informed from Go\nGet connected\nWhy Go navigate_next\nnavigate_beforeWhy Go\nCase Studies\nUse Cases\nSecurity\nLearn\nDocs navigate_next\nnavigate_beforeDocs\nGo Spec\nGo User Manual\nStandard library\nRelease Notes\nEffective Go\nPackages\nCommunity navigate_next\nnavigate_beforeCommunity\nRecorded Talks\nMeetups\nopen_in_new\nConferences\nopen_in_new\nGo blog\nGo project\nGet connected\nDocumentation\nEffective Go\nEffective Go\nIntrodu\n\n[This covers the main concepts - there's additional detail in the full documentation]"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "effective",
+          "go",
+          "golang",
+          "package",
+          "function",
+          "module",
+          "interface",
+          "struct",
+          "error",
+          "test"
+        ],
+        "section": "main_content",
+        "type": "detailed_explanation"
+      },
+      "source": {
+        "url": "https://golang.org/doc/effective_go",
+        "title": "Effective Go",
+        "category": "Core Documentation",
+        "description": "Essential guide to writing idiomatic Go code",
+        "word_count": 16570,
+        "quality_tier": "medium"
+      },
+      "created_at": "2025-08-10T12:16:22Z"
+    },
+    {
+      "id": "effective_go_reference_1754828184",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you give me a quick reference or summary of the main points in Effective Go?"
+        },
+        {
+          "role": "assistant",
+          "content": "Here's a quick reference for Effective Go:\n\n• Note added January, 2022:\n• gofmt will line up the columns:\n• Some formatting details remain.  Very briefly:\n• Go needs fewer parentheses than C and Java: control structures (if,\n• They even have semantic effect:\n• its contents, which implies that the package name should be good:\n• Both names read well in practice:\n"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "effective",
+          "go",
+          "golang",
+          "package",
+          "function",
+          "module",
+          "interface",
+          "struct",
+          "error",
+          "test"
+        ],
+        "section": "summary",
+        "type": "quick_reference"
+      },
+      "source": {
+        "url": "https://golang.org/doc/effective_go",
+        "title": "Effective Go",
+        "category": "Core Documentation",
+        "description": "Essential guide to writing idiomatic Go code",
+        "word_count": 16570,
+        "quality_tier": "medium"
+      },
+      "created_at": "2025-08-10T12:16:22Z"
+    },
+    {
+      "id": "effective_go_examples_1754828185",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Do you have code examples for effective go? I learn better with practical examples."
+        },
+        {
+          "role": "assistant",
+          "content": "Here are code examples from Effective Go:\n\n```go\nfunc shouldEscape(c byte) bool {\n    switch c {\n    case ' ', '?', '\u0026amp;', '=', '#', '+', '%':\n        return true\n    }\n```\n\n"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "effective",
+          "go",
+          "golang",
+          "package",
+          "function",
+          "module",
+          "interface",
+          "struct",
+          "error",
+          "test",
+          "examples",
+          "code",
+          "tutorial"
+        ],
+        "section": "examples",
+        "type": "code_examples"
+      },
+      "source": {
+        "url": "https://golang.org/doc/effective_go",
+        "title": "Effective Go",
+        "category": "Core Documentation",
+        "description": "Essential guide to writing idiomatic Go code",
+        "word_count": 16570,
+        "quality_tier": "medium"
+      },
+      "created_at": "2025-08-10T12:16:22Z"
+    },
+    {
+      "id": "go_language_specification_overview_1754828182",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you explain what Go Language Specification covers? I'm looking at the Go documentation."
+        },
+        {
+          "role": "assistant",
+          "content": "I'd be happy to explain Go Language Specification!\n\nOfficial language specification\n\nHere's what it covers:\n\nThe Go Programming Language Specification - The Go Programming Language"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "language",
+          "specification"
+        ],
+        "section": "introduction",
+        "type": "overview"
+      },
+      "source": {
+        "url": "https://golang.org/ref/spec",
+        "title": "Go Language Specification",
+        "category": "Language Reference",
+        "description": "Official language specification",
+        "word_count": 38356,
+        "quality_tier": "medium"
+      },
+      "created_at": "2025-08-10T12:16:22Z"
+    },
+    {
+      "id": "go_language_specification_detailed_1754828183",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "I need detailed information about go language specification. Can you walk me through the key concepts?"
+        },
+        {
+          "role": "assistant",
+          "content": "Let me walk you through Go Language Specification in detail.\n\nThe Go Programming Language Specification - The Go Programming Language\nSkip to Main Content\nWhy Go arrow_drop_down\nPress Enter to activate/deactivate dropdown\nCase Studies\nCommon problems companies solve with Go\nUse Cases\nStories about how and why companies use Go\nSecurity\nHow Go can help keep you secure by default\nLearn\nPress Enter to activate/deactivate dropdown\nDocs arrow_drop_down\nPress Enter to activate/deactivate dropdown\nGo Spec\nThe official Go language specification\nGo User Manual\nA complete introduction to building software with Go\nStandard library\nReference documentation for Go\u0026#39;s standard library\nRelease Notes\nLearn what\u0026#39;s new in each Go release\nEffective Go\nTips for writing clear, performant, and idiomatic Go code\nPackages\nPress Enter to activate/deactivate dropdown\nCommunity arrow_drop_down\nPress Enter to activate/deactivate dropdown\nRecorded Talks\nVideos from prior events\nMeetups\nopen_in_new\nMeet other local Go developers\nConferences\nopen_in_new\nLearn and network with Go developers from around the world\nGo blog\nThe Go project\u0026#39;s official blog.\nGo project\nGet help and stay informed from Go\nGet connected\nWhy Go navigate_next\nnavigate_beforeWhy Go\nCase Studies\nUse Cases\nSecurity\nLearn\nDocs navigate_next\nnavigate_beforeDocs\nGo Spec\nGo User Manual\nStandard library\nRelease Notes\nEffective Go\nPackages\nCommunity navigate_next\nnavigate_beforeCommunity\nRecorded Talks\nMeetups\nopen_in_new\nConferences\nopen_in_new\nGo blog\nGo project\nGet connected\nThe Go Programming\n\n[This covers the main concepts - there's additional detail in the full documentation]"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "language",
+          "specification",
+          "go",
+          "golang",
+          "package",
+          "function",
+          "interface",
+          "struct",
+          "error",
+          "test"
+        ],
+        "section": "main_content",
+        "type": "detailed_explanation"
+      },
+      "source": {
+        "url": "https://golang.org/ref/spec",
+        "title": "Go Language Specification",
+        "category": "Language Reference",
+        "description": "Official language specification",
+        "word_count": 38356,
+        "quality_tier": "medium"
+      },
+      "created_at": "2025-08-10T12:16:22Z"
+    },
+    {
+      "id": "go_language_specification_reference_1754828184",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you give me a quick reference or summary of the main points in Go Language Specification?"
+        },
+        {
+          "role": "assistant",
+          "content": "Here's a quick reference for Go Language Specification:\n\n• of Extended Backus-Naur Form (EBNF):\n• operators, in increasing precedence:\n• Implementation restriction: For compatibility with other tools, a\n• Implementation restriction: For compatibility with other tools, a\n• The following terms are used to denote specific Unicode character categories:\n• Comments serve as program documentation. There are two forms:\n• There are four classes: identifiers, keywords, operators\n"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "language",
+          "specification",
+          "go",
+          "golang",
+          "package",
+          "function",
+          "interface",
+          "struct",
+          "error",
+          "test"
+        ],
+        "section": "summary",
+        "type": "quick_reference"
+      },
+      "source": {
+        "url": "https://golang.org/ref/spec",
+        "title": "Go Language Specification",
+        "category": "Language Reference",
+        "description": "Official language specification",
+        "word_count": 38356,
+        "quality_tier": "medium"
+      },
+      "created_at": "2025-08-10T12:16:22Z"
+    },
+    {
+      "id": "go_language_specification_examples_1754828185",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Do you have code examples for go language specification? I learn better with practical examples."
+        },
+        {
+          "role": "assistant",
+          "content": "Here are code examples from Go Language Specification:\n\n```go\nfunc f[P any](x P) { … }\n```\n\n```go\nfunc f[T any]() {\n\ttype L T   // illegal: T is a type parameter declared by the enclosing function\n}\n```\n\n```go\nfunc IndexRune(s string, r rune) int {\n\tfor i, c := range s {\n\t\tif c == r {\n\t\t\treturn i\n\t\t}\n```\n\n"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "language",
+          "specification",
+          "go",
+          "golang",
+          "package",
+          "function",
+          "interface",
+          "struct",
+          "error",
+          "test",
+          "examples",
+          "code",
+          "tutorial"
+        ],
+        "section": "examples",
+        "type": "code_examples"
+      },
+      "source": {
+        "url": "https://golang.org/ref/spec",
+        "title": "Go Language Specification",
+        "category": "Language Reference",
+        "description": "Official language specification",
+        "word_count": 38356,
+        "quality_tier": "medium"
+      },
+      "created_at": "2025-08-10T12:16:22Z"
+    },
+    {
+      "id": "tutorial__get_started_with_go_overview_1754828182",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you explain what Tutorial: Get started with Go covers? I'm looking at the Go documentation."
+        },
+        {
+          "role": "assistant",
+          "content": "I'd be happy to explain Tutorial: Get started with Go!\n\nIntroduction for new Go developers\n\nHere's what it covers:\n\nTutorial: Get started with Go - The Go Programming Language"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "tutorial",
+          "get",
+          "started",
+          "with",
+          "go"
+        ],
+        "section": "introduction",
+        "type": "overview"
+      },
+      "source": {
+        "url": "https://golang.org/doc/tutorial/getting-started",
+        "title": "Tutorial: Get started with Go",
+        "category": "Tutorials",
+        "description": "Introduction for new Go developers",
+        "word_count": 1195,
+        "quality_tier": "medium"
+      },
+      "created_at": "2025-08-10T12:16:22Z"
+    },
+    {
+      "id": "tutorial__get_started_with_go_detailed_1754828183",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "I need detailed information about tutorial: get started with go. Can you walk me through the key concepts?"
+        },
+        {
+          "role": "assistant",
+          "content": "Let me walk you through Tutorial: Get started with Go in detail.\n\nTutorial: Get started with Go - The Go Programming Language\nSkip to Main Content\nWhy Go arrow_drop_down\nPress Enter to activate/deactivate dropdown\nCase Studies\nCommon problems companies solve with Go\nUse Cases\nStories about how and why companies use Go\nSecurity\nHow Go can help keep you secure by default\nLearn\nPress Enter to activate/deactivate dropdown\nDocs arrow_drop_down\nPress Enter to activate/deactivate dropdown\nGo Spec\nThe official Go language specification\nGo User Manual\nA complete introduction to building software with Go\nStandard library\nReference documentation for Go\u0026#39;s standard library\nRelease Notes\nLearn what\u0026#39;s new in each Go release\nEffective Go\nTips for writing clear, performant, and idiomatic Go code\nPackages\nPress Enter to activate/deactivate dropdown\nCommunity arrow_drop_down\nPress Enter to activate/deactivate dropdown\nRecorded Talks\nVideos from prior events\nMeetups\nopen_in_new\nMeet other local Go developers\nConferences\nopen_in_new\nLearn and network with Go developers from around the world\nGo blog\nThe Go project\u0026#39;s official blog.\nGo project\nGet help and stay informed from Go\nGet connected\nWhy Go navigate_next\nnavigate_beforeWhy Go\nCase Studies\nUse Cases\nSecurity\nLearn\nDocs navigate_next\nnavigate_beforeDocs\nGo Spec\nGo User Manual\nStandard library\nRelease Notes\nEffective Go\nPackages\nCommunity navigate_next\nnavigate_beforeCommunity\nRecorded Talks\nMeetups\nopen_in_new\nConferences\nopen_in_new\nGo blog\nGo project\nGet connected\nDocumentation\nTutorials\nTutori\n\n[This covers the main concepts - there's additional detail in the full documentation]"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "tutorial",
+          "get",
+          "started",
+          "with",
+          "go",
+          "golang",
+          "package",
+          "function",
+          "module",
+          "test"
+        ],
+        "section": "main_content",
+        "type": "detailed_explanation"
+      },
+      "source": {
+        "url": "https://golang.org/doc/tutorial/getting-started",
+        "title": "Tutorial: Get started with Go",
+        "category": "Tutorials",
+        "description": "Introduction for new Go developers",
+        "word_count": 1195,
+        "quality_tier": "medium"
+      },
+      "created_at": "2025-08-10T12:16:22Z"
+    },
+    {
+      "id": "tutorial__get_started_with_go_reference_1754828184",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you give me a quick reference or summary of the main points in Tutorial: Get started with Go?"
+        },
+        {
+          "role": "assistant",
+          "content": "Here's a quick reference for Tutorial: Get started with Go:\n\n• Tutorial: Get started with Go - The Go Programming Language\n• Tutorial: Get started with Go\n• Tutorial: Get started with Go\n• Note: For other tutorials, see\n• For example, use the following commands:\n• go: creating new go.mod: module example/hello\n• This is your Go code. In this code, you:\n"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "tutorial",
+          "get",
+          "started",
+          "with",
+          "go",
+          "golang",
+          "package",
+          "function",
+          "module",
+          "test"
+        ],
+        "section": "summary",
+        "type": "quick_reference"
+      },
+      "source": {
+        "url": "https://golang.org/doc/tutorial/getting-started",
+        "title": "Tutorial: Get started with Go",
+        "category": "Tutorials",
+        "description": "Introduction for new Go developers",
+        "word_count": 1195,
+        "quality_tier": "medium"
+      },
+      "created_at": "2025-08-10T12:16:22Z"
+    },
+    {
+      "id": "tutorial__get_started_with_go_examples_1754828185",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Do you have code examples for tutorial: get started with go? I learn better with practical examples."
+        },
+        {
+          "role": "assistant",
+          "content": "Here are code examples from Tutorial: Get started with Go:\n\n```go\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n```\n\n```go\nfunc main() {\n    fmt.Println(quote.Go())\n}\n```\n\n```go\npackage discovery\n```\n\n"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "tutorial",
+          "get",
+          "started",
+          "with",
+          "go",
+          "golang",
+          "package",
+          "function",
+          "module",
+          "test",
+          "examples",
+          "code",
+          "tutorial"
+        ],
+        "section": "examples",
+        "type": "code_examples"
+      },
+      "source": {
+        "url": "https://golang.org/doc/tutorial/getting-started",
+        "title": "Tutorial: Get started with Go",
+        "category": "Tutorials",
+        "description": "Introduction for new Go developers",
+        "word_count": 1195,
+        "quality_tier": "medium"
+      },
+      "created_at": "2025-08-10T12:16:22Z"
+    },
+    {
+      "id": "tutorial__create_a_go_module_overview_1754828182",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you explain what Tutorial: Create a Go module covers? I'm looking at the Go documentation."
+        },
+        {
+          "role": "assistant",
+          "content": "I'd be happy to explain Tutorial: Create a Go module!\n\nLearn to create Go modules\n\nHere's what it covers:\n\nTutorial: Create a Go module - The Go Programming Language"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "tutorial",
+          "create",
+          "module",
+          "go",
+          "module"
+        ],
+        "section": "introduction",
+        "type": "overview"
+      },
+      "source": {
+        "url": "https://golang.org/doc/tutorial/create-module",
+        "title": "Tutorial: Create a Go module",
+        "category": "Tutorials",
+        "description": "Learn to create Go modules",
+        "word_count": 1181,
+        "quality_tier": "medium"
+      },
+      "created_at": "2025-08-10T12:16:22Z"
+    },
+    {
+      "id": "tutorial__create_a_go_module_detailed_1754828183",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "I need detailed information about tutorial: create a go module. Can you walk me through the key concepts?"
+        },
+        {
+          "role": "assistant",
+          "content": "Let me walk you through Tutorial: Create a Go module in detail.\n\nTutorial: Create a Go module - The Go Programming Language\nSkip to Main Content\nWhy Go arrow_drop_down\nPress Enter to activate/deactivate dropdown\nCase Studies\nCommon problems companies solve with Go\nUse Cases\nStories about how and why companies use Go\nSecurity\nHow Go can help keep you secure by default\nLearn\nPress Enter to activate/deactivate dropdown\nDocs arrow_drop_down\nPress Enter to activate/deactivate dropdown\nGo Spec\nThe official Go language specification\nGo User Manual\nA complete introduction to building software with Go\nStandard library\nReference documentation for Go\u0026#39;s standard library\nRelease Notes\nLearn what\u0026#39;s new in each Go release\nEffective Go\nTips for writing clear, performant, and idiomatic Go code\nPackages\nPress Enter to activate/deactivate dropdown\nCommunity arrow_drop_down\nPress Enter to activate/deactivate dropdown\nRecorded Talks\nVideos from prior events\nMeetups\nopen_in_new\nMeet other local Go developers\nConferences\nopen_in_new\nLearn and network with Go developers from around the world\nGo blog\nThe Go project\u0026#39;s official blog.\nGo project\nGet help and stay informed from Go\nGet connected\nWhy Go navigate_next\nnavigate_beforeWhy Go\nCase Studies\nUse Cases\nSecurity\nLearn\nDocs navigate_next\nnavigate_beforeDocs\nGo Spec\nGo User Manual\nStandard library\nRelease Notes\nEffective Go\nPackages\nCommunity navigate_next\nnavigate_beforeCommunity\nRecorded Talks\nMeetups\nopen_in_new\nConferences\nopen_in_new\nGo blog\nGo project\nGet connected\nDocumentation\nTutorials\nTutoria\n\n[This covers the main concepts - there's additional detail in the full documentation]"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "tutorial",
+          "create",
+          "module",
+          "go",
+          "golang",
+          "package",
+          "function",
+          "module",
+          "error",
+          "test"
+        ],
+        "section": "main_content",
+        "type": "detailed_explanation"
+      },
+      "source": {
+        "url": "https://golang.org/doc/tutorial/create-module",
+        "title": "Tutorial: Create a Go module",
+        "category": "Tutorials",
+        "description": "Learn to create Go modules",
+        "word_count": 1181,
+        "quality_tier": "medium"
+      },
+      "created_at": "2025-08-10T12:16:22Z"
+    },
+    {
+      "id": "tutorial__create_a_go_module_reference_1754828184",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you give me a quick reference or summary of the main points in Tutorial: Create a Go module?"
+        },
+        {
+          "role": "assistant",
+          "content": "Here's a quick reference for Tutorial: Create a Go module:\n\n• Tutorial: Create a Go module - The Go Programming Language\n• Tutorial: Create a Go module\n• Tutorial: Create a Go module\n• Tutorial: Get started with Go, which introduces\n• Note: For other tutorials, see\n• For example, from your home directory use the following commands:\n• go: creating new go.mod: module example.com/greetings\n"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "tutorial",
+          "create",
+          "module",
+          "go",
+          "golang",
+          "package",
+          "function",
+          "module",
+          "error",
+          "test"
+        ],
+        "section": "summary",
+        "type": "quick_reference"
+      },
+      "source": {
+        "url": "https://golang.org/doc/tutorial/create-module",
+        "title": "Tutorial: Create a Go module",
+        "category": "Tutorials",
+        "description": "Learn to create Go modules",
+        "word_count": 1181,
+        "quality_tier": "medium"
+      },
+      "created_at": "2025-08-10T12:16:22Z"
+    },
+    {
+      "id": "tutorial__create_a_go_module_examples_1754828185",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Do you have code examples for tutorial: create a go module? I learn better with practical examples."
+        },
+        {
+          "role": "assistant",
+          "content": "Here are code examples from Tutorial: Create a Go module:\n\n```go\nfunc Hello(name string) string {\n    // Return a greeting that embeds the name in a message.\n    message := fmt.Sprintf(\"Hi, %v. Welcome!\", name)\n    return message\n}\n```\n\n```go\npackage greetings\n```\n\n"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "tutorial",
+          "create",
+          "module",
+          "go",
+          "golang",
+          "package",
+          "function",
+          "module",
+          "error",
+          "test",
+          "examples",
+          "code",
+          "tutorial"
+        ],
+        "section": "examples",
+        "type": "code_examples"
+      },
+      "source": {
+        "url": "https://golang.org/doc/tutorial/create-module",
+        "title": "Tutorial: Create a Go module",
+        "category": "Tutorials",
+        "description": "Learn to create Go modules",
+        "word_count": 1181,
+        "quality_tier": "medium"
+      },
+      "created_at": "2025-08-10T12:16:22Z"
+    },
+    {
+      "id": "how_to_write_go_code_overview_1754828182",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you explain what How to Write Go Code covers? I'm looking at the Go documentation."
+        },
+        {
+          "role": "assistant",
+          "content": "I'd be happy to explain How to Write Go Code!\n\nGuide to structuring Go programs\n\nHere's what it covers:\n\nLearn\n          \n        \n        \n          \n            Docs navigate_next"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "how",
+          "write",
+          "code",
+          "go",
+          "struct"
+        ],
+        "section": "introduction",
+        "type": "overview"
+      },
+      "source": {
+        "url": "https://golang.org/doc/code",
+        "title": "How to Write Go Code",
+        "category": "Programming Guide",
+        "description": "Guide to structuring Go programs",
+        "word_count": 1834,
+        "quality_tier": "medium"
+      },
+      "created_at": "2025-08-10T12:16:22Z"
+    },
+    {
+      "id": "how_to_write_go_code_detailed_1754828183",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "I need detailed information about how to write go code. Can you walk me through the key concepts?"
+        },
+        {
+          "role": "assistant",
+          "content": "Let me walk you through How to Write Go Code in detail.\n\nHow to Write Go Code - The Go Programming Language\nSkip to Main Content\nWhy Go arrow_drop_down\nPress Enter to activate/deactivate dropdown\nCase Studies\nCommon problems companies solve with Go\nUse Cases\nStories about how and why companies use Go\nSecurity\nHow Go can help keep you secure by default\nLearn\nPress Enter to activate/deactivate dropdown\nDocs arrow_drop_down\nPress Enter to activate/deactivate dropdown\nGo Spec\nThe official Go language specification\nGo User Manual\nA complete introduction to building software with Go\nStandard library\nReference documentation for Go\u0026#39;s standard library\nRelease Notes\nLearn what\u0026#39;s new in each Go release\nEffective Go\nTips for writing clear, performant, and idiomatic Go code\nPackages\nPress Enter to activate/deactivate dropdown\nCommunity arrow_drop_down\nPress Enter to activate/deactivate dropdown\nRecorded Talks\nVideos from prior events\nMeetups\nopen_in_new\nMeet other local Go developers\nConferences\nopen_in_new\nLearn and network with Go developers from around the world\nGo blog\nThe Go project\u0026#39;s official blog.\nGo project\nGet help and stay informed from Go\nGet connected\nWhy Go navigate_next\nnavigate_beforeWhy Go\nCase Studies\nUse Cases\nSecurity\nLearn\nDocs navigate_next\nnavigate_beforeDocs\nGo Spec\nGo User Manual\nStandard library\nRelease Notes\nEffective Go\nPackages\nCommunity navigate_next\nnavigate_beforeCommunity\nRecorded Talks\nMeetups\nopen_in_new\nConferences\nopen_in_new\nGo blog\nGo project\nGet connected\nDocumentation\nHow to Write Go Code\nHow \n\n[This covers the main concepts - there's additional detail in the full documentation]"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "how",
+          "write",
+          "code",
+          "go",
+          "golang",
+          "package",
+          "function",
+          "module",
+          "struct",
+          "error",
+          "test"
+        ],
+        "section": "main_content",
+        "type": "detailed_explanation"
+      },
+      "source": {
+        "url": "https://golang.org/doc/code",
+        "title": "How to Write Go Code",
+        "category": "Programming Guide",
+        "description": "Guide to structuring Go programs",
+        "word_count": 1834,
+        "quality_tier": "medium"
+      },
+      "created_at": "2025-08-10T12:16:22Z"
+    },
+    {
+      "id": "how_to_write_go_code_reference_1754828184",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you give me a quick reference or summary of the main points in How to Write Go Code?"
+        },
+        {
+          "role": "assistant",
+          "content": "Here's a quick reference for How to Write Go Code:\n\n• go.mod there declares the module path: the import path\n• https://golang.org/x/tools (described more here).\n• go: creating new go.mod: module example/user/hello\n• the following Go code:\n• Now you can build and install that program with the go tool:\n• for an environment variable for future go commands:\n• To unset a variable previously set by go env -w, use go env -u:\n"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "how",
+          "write",
+          "code",
+          "go",
+          "golang",
+          "package",
+          "function",
+          "module",
+          "struct",
+          "error",
+          "test"
+        ],
+        "section": "summary",
+        "type": "quick_reference"
+      },
+      "source": {
+        "url": "https://golang.org/doc/code",
+        "title": "How to Write Go Code",
+        "category": "Programming Guide",
+        "description": "Guide to structuring Go programs",
+        "word_count": 1834,
+        "quality_tier": "medium"
+      },
+      "created_at": "2025-08-10T12:16:22Z"
+    },
+    {
+      "id": "how_to_write_go_code_examples_1754828185",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Do you have code examples for how to write go code? I learn better with practical examples."
+        },
+        {
+          "role": "assistant",
+          "content": "Here are code examples from How to Write Go Code:\n\n```go\nfunc main() {\n    fmt.Println(\"Hello, world.\")\n}\n```\n\n```go\nfunc ReverseRunes(s string) string {\n    r := []rune(s)\n    for i, j := 0, len(r)-1; i \u0026lt; len(r)/2; i, j = i+1, j-1 {\n        r[i], r[j] = r[j], r[i]\n    }\n```\n\n```go\nfunc main() {\n    fmt.Println(morestrings.ReverseRunes(\"!oG ,olleH\"))\n}\n```\n\n"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "how",
+          "write",
+          "code",
+          "go",
+          "golang",
+          "package",
+          "function",
+          "module",
+          "struct",
+          "error",
+          "test",
+          "examples",
+          "code",
+          "tutorial"
+        ],
+        "section": "examples",
+        "type": "code_examples"
+      },
+      "source": {
+        "url": "https://golang.org/doc/code",
+        "title": "How to Write Go Code",
+        "category": "Programming Guide",
+        "description": "Guide to structuring Go programs",
+        "word_count": 1834,
+        "quality_tier": "medium"
+      },
+      "created_at": "2025-08-10T12:16:22Z"
+    },
+    {
+      "id": "package_fmt_overview_1754828182",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you explain what Package fmt covers? I'm looking at the Go documentation."
+        },
+        {
+          "role": "assistant",
+          "content": "I'd be happy to explain Package fmt!\n\nFormatted I/O functions\n\nHere's what it covers:\n\nDiscover Packages\n          \n        \n          \n            Standard library\n          \n        \n        \n          \n            fmt"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "package",
+          "fmt",
+          "function"
+        ],
+        "section": "introduction",
+        "type": "overview"
+      },
+      "source": {
+        "url": "https://golang.org/pkg/fmt/",
+        "title": "Package fmt",
+        "category": "Standard Library",
+        "description": "Formatted I/O functions",
+        "word_count": 7174,
+        "quality_tier": "medium"
+      },
+      "created_at": "2025-08-10T12:16:22Z"
+    },
+    {
+      "id": "package_fmt_detailed_1754828183",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "I need detailed information about package fmt. Can you walk me through the key concepts?"
+        },
+        {
+          "role": "assistant",
+          "content": "Let me walk you through Package fmt in detail.\n\nfmt package - fmt - Go Packages\nSkip to Main Content\nWhy Go\nCase Studies\nCommon problems companies solve with Go\nUse Cases\nStories about how and why companies use Go\nSecurity\nHow Go can help keep you secure by default\nLearn\nDocs\nEffective Go\nTips for writing clear, performant, and idiomatic Go code\nGo User Manual\nA complete introduction to building software with Go\nStandard library\nReference documentation for Go's standard library\nRelease Notes\nLearn what's new in each Go release\nPackages\nCommunity\nRecorded Talks\nVideos from prior events\nMeetups\nMeet other local Go developers\nConferences\nLearn and network with Go developers from around the world\nGo blog\nThe Go project's official blog.\nGo project\nGet help and stay informed from Go\nGet connected\nWhy Go\nWhy Go\nCase Studies\nUse Cases\nSecurity\nLearn\nDocs\nDocs\nEffective Go\nGo User Manual\nStandard library\nRelease Notes\nPackages\nCommunity\nCommunity\nRecorded Talks\nMeetups\nConferences\nGo blog\nGo project\nGet connected\nDiscover Packages\nStandard library\nfmt\nfmt\npackage\nstandard library\nVersion:\ngo1.24.6\nOpens a new window with list of versions in this module.\nLatest\nLatest\nThis package is not in the latest version of its module.\nGo to latest\nPublished: Aug  6, 2025\nLicense: BSD-3-Clause\nOpens a new window with license information.\nImports: 10\nOpens a new window with list of imports.\nImported by: 5,268,931\nOpens a new window with list of known importers.\nMain\nVersions\nLicenses\nImports\nImported By\nDetails\nValid go.mod file\nThe Go module sy\n\n[This covers the main concepts - there's additional detail in the full documentation]"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "package",
+          "fmt",
+          "go",
+          "golang",
+          "package",
+          "function",
+          "module",
+          "interface",
+          "struct",
+          "error",
+          "test"
+        ],
+        "section": "main_content",
+        "type": "detailed_explanation"
+      },
+      "source": {
+        "url": "https://golang.org/pkg/fmt/",
+        "title": "Package fmt",
+        "category": "Standard Library",
+        "description": "Formatted I/O functions",
+        "word_count": 7174,
+        "quality_tier": "medium"
+      },
+      "created_at": "2025-08-10T12:16:22Z"
+    },
+    {
+      "id": "package_fmt_reference_1754828184",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you give me a quick reference or summary of the main points in Package fmt?"
+        },
+        {
+          "role": "assistant",
+          "content": "Here's a quick reference for Package fmt:\n\n• Published: Aug  6, 2025\n• License: BSD-3-Clause\n• Imported by: 5,268,931\n• Printing ¶The verbs:\n• %U\tUnicode format: U+1234; same as \u0026#34;U+%04X\u0026#34;\n• Floating-point and complex constituents:\n• String and slice of bytes (treated equivalently with these verbs):\n"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "package",
+          "fmt",
+          "go",
+          "golang",
+          "package",
+          "function",
+          "module",
+          "interface",
+          "struct",
+          "error",
+          "test"
+        ],
+        "section": "summary",
+        "type": "quick_reference"
+      },
+      "source": {
+        "url": "https://golang.org/pkg/fmt/",
+        "title": "Package fmt",
+        "category": "Standard Library",
+        "description": "Formatted I/O functions",
+        "word_count": 7174,
+        "quality_tier": "medium"
+      },
+      "created_at": "2025-08-10T12:16:22Z"
+    },
+    {
+      "id": "package_fmt_examples_1754828185",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Do you have code examples for package fmt? I learn better with practical examples."
+        },
+        {
+          "role": "assistant",
+          "content": "Here are code examples from Package fmt:\n\n```go\nfunc main() {\n\tconst name, id = \u0026#34;bueller\u0026#34;, 17\n\terr := fmt.Errorf(\u0026#34;user %q (id %d) not found\u0026#34;, name, id)\n\tfmt.Println(err.Error())\n\n}\n```\n\n"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "package",
+          "fmt",
+          "go",
+          "golang",
+          "package",
+          "function",
+          "module",
+          "interface",
+          "struct",
+          "error",
+          "test",
+          "examples",
+          "code",
+          "tutorial"
+        ],
+        "section": "examples",
+        "type": "code_examples"
+      },
+      "source": {
+        "url": "https://golang.org/pkg/fmt/",
+        "title": "Package fmt",
+        "category": "Standard Library",
+        "description": "Formatted I/O functions",
+        "word_count": 7174,
+        "quality_tier": "medium"
+      },
+      "created_at": "2025-08-10T12:16:22Z"
+    },
+    {
+      "id": "package_http_overview_1754828182",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you explain what Package http covers? I'm looking at the Go documentation."
+        },
+        {
+          "role": "assistant",
+          "content": "I'd be happy to explain Package http!\n\nHTTP client and server implementations\n\nHere's what it covers:\n\nDiscover Packages\n          \n        \n          \n            Standard library\n          \n        \n          \n            net\n          \n        \n        \n          \n            http"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "package",
+          "http"
+        ],
+        "section": "introduction",
+        "type": "overview"
+      },
+      "source": {
+        "url": "https://golang.org/pkg/net/http/",
+        "title": "Package http",
+        "category": "Standard Library",
+        "description": "HTTP client and server implementations",
+        "word_count": 21422,
+        "quality_tier": "medium"
+      },
+      "created_at": "2025-08-10T12:16:22Z"
+    },
+    {
+      "id": "package_http_detailed_1754828183",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "I need detailed information about package http. Can you walk me through the key concepts?"
+        },
+        {
+          "role": "assistant",
+          "content": "Let me walk you through Package http in detail.\n\nhttp package - net/http - Go Packages\nSkip to Main Content\nWhy Go\nCase Studies\nCommon problems companies solve with Go\nUse Cases\nStories about how and why companies use Go\nSecurity\nHow Go can help keep you secure by default\nLearn\nDocs\nEffective Go\nTips for writing clear, performant, and idiomatic Go code\nGo User Manual\nA complete introduction to building software with Go\nStandard library\nReference documentation for Go's standard library\nRelease Notes\nLearn what's new in each Go release\nPackages\nCommunity\nRecorded Talks\nVideos from prior events\nMeetups\nMeet other local Go developers\nConferences\nLearn and network with Go developers from around the world\nGo blog\nThe Go project's official blog.\nGo project\nGet help and stay informed from Go\nGet connected\nWhy Go\nWhy Go\nCase Studies\nUse Cases\nSecurity\nLearn\nDocs\nDocs\nEffective Go\nGo User Manual\nStandard library\nRelease Notes\nPackages\nCommunity\nCommunity\nRecorded Talks\nMeetups\nConferences\nGo blog\nGo project\nGet connected\nDiscover Packages\nStandard library\nnet\nhttp\nhttp\npackage\nstandard library\nVersion:\ngo1.24.6\nOpens a new window with list of versions in this module.\nLatest\nLatest\nThis package is not in the latest version of its module.\nGo to latest\nPublished: Aug  6, 2025\nLicense: BSD-3-Clause\nOpens a new window with license information.\nImports: 46\nOpens a new window with list of imports.\nImported by: 1,661,900\nOpens a new window with list of known importers.\nMain\nVersions\nLicenses\nImports\nImported By\nDetails\nValid go.mod file\nThe \n\n[This covers the main concepts - there's additional detail in the full documentation]"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "package",
+          "http",
+          "go",
+          "golang",
+          "package",
+          "function",
+          "module",
+          "interface",
+          "struct",
+          "error",
+          "test"
+        ],
+        "section": "main_content",
+        "type": "detailed_explanation"
+      },
+      "source": {
+        "url": "https://golang.org/pkg/net/http/",
+        "title": "Package http",
+        "category": "Standard Library",
+        "description": "HTTP client and server implementations",
+        "word_count": 21422,
+        "quality_tier": "medium"
+      },
+      "created_at": "2025-08-10T12:16:22Z"
+    },
+    {
+      "id": "package_http_reference_1754828184",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you give me a quick reference or summary of the main points in Package http?"
+        },
+        {
+          "role": "assistant",
+          "content": "Here's a quick reference for Package http:\n\n• Published: Aug  6, 2025\n• License: BSD-3-Clause\n• Imported by: 1,661,900\n• Get, Head, Post, and PostForm make HTTP (or HTTPS) requests:\n• resp, err := http.Get(\u0026#34;http://example.com/\u0026#34;)\n• resp, err := http.Post(\u0026#34;http://example.com/upload\u0026#34;, \u0026#34;image/jpeg\u0026#34;, \u0026amp;buf)\n• resp, err := http.PostForm(\u0026#34;http://example.com/form\u0026#34;,\n"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "package",
+          "http",
+          "go",
+          "golang",
+          "package",
+          "function",
+          "module",
+          "interface",
+          "struct",
+          "error",
+          "test"
+        ],
+        "section": "summary",
+        "type": "quick_reference"
+      },
+      "source": {
+        "url": "https://golang.org/pkg/net/http/",
+        "title": "Package http",
+        "category": "Standard Library",
+        "description": "HTTP client and server implementations",
+        "word_count": 21422,
+        "quality_tier": "medium"
+      },
+      "created_at": "2025-08-10T12:16:22Z"
+    },
+    {
+      "id": "package_http_examples_1754828185",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Do you have code examples for package http? I learn better with practical examples."
+        },
+        {
+          "role": "assistant",
+          "content": "Here are code examples from Package http:\n\n```go\nfunc main() {\n\thttp.Handle(\u0026#34;/count\u0026#34;, new(countHandler))\n\tlog.Fatal(http.ListenAndServe(\u0026#34;:8080\u0026#34;, nil))\n}\n```\n\n```go\nfunc main() {\n\th1 := func(w http.ResponseWriter, _ *http.Request) {\n\t\tio.WriteString(w, \u0026#34;Hello from a HandleFunc #1!\\n\u0026#34;)\n\t}\n```\n\n```go\nfunc main() {\n\t// Hello world, the web server\n\n\thelloHandler := func(w http.ResponseWriter, req *http.Request) {\n\t\tio.WriteString(w, \u0026#34;Hello, world!\\n\u0026#34;)\n\t}\n```\n\n"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "package",
+          "http",
+          "go",
+          "golang",
+          "package",
+          "function",
+          "module",
+          "interface",
+          "struct",
+          "error",
+          "test",
+          "examples",
+          "code",
+          "tutorial"
+        ],
+        "section": "examples",
+        "type": "code_examples"
+      },
+      "source": {
+        "url": "https://golang.org/pkg/net/http/",
+        "title": "Package http",
+        "category": "Standard Library",
+        "description": "HTTP client and server implementations",
+        "word_count": 21422,
+        "quality_tier": "medium"
+      },
+      "created_at": "2025-08-10T12:16:22Z"
+    },
+    {
+      "id": "go_wiki_intro_1754828698",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "I'm interested in learning about Go Wiki. Can you tell me what this covers?"
+        },
+        {
+          "role": "assistant",
+          "content": "Great choice! Go Wiki is community-maintained go documentation and guides.\n\nHere's what you'll find:\n\n\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0002\u0003�\\[o#;r~�_��i\u00178��~��\u0007X�\u0026ٷ݇\u0004A\u0010\u0004\r^�\u0012�[�M�=:��]y�/K\u0015�eɲ�Kvak\u000e\u000eF�f��*V}UER��%�������?�����\u0017k�i�}�J\u001f_\u0016��w��%tK|��\u0015��I�ځm���%\u001f�]N�[�Z{�װ��ᏹA��n������x\u001co\u0019�̆...\n\nThis content comes from Community Wiki and covers essential concepts that will help you understand Go programming better."
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "wiki",
+          "community",
+          "wiki",
+          "documentation",
+          "guides"
+        ],
+        "section": "overview",
+        "tags": [
+          "community",
+          "wiki",
+          "documentation",
+          "guides"
+        ],
+        "type": "topic_introduction"
+      },
+      "source": {
+        "url": "https://github.com/golang/go/wiki",
+        "title": "Go Wiki",
+        "category": "Community Wiki",
+        "description": "Community-maintained Go documentation and guides",
+        "word_count": 426,
+        "quality_tier": "low"
+      },
+      "created_at": "2025-08-10T12:24:58Z"
+    },
+    {
+      "id": "go_wiki_deepdive_1754828699",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you give me a detailed explanation of the concepts in Go Wiki? I want to understand it thoroughly."
+        },
+        {
+          "role": "assistant",
+          "content": "Let me walk you through Go Wiki in detail.\n\n\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0002\u0003�\\[o#;r~�_��i\u00178��~��\u0007X�\u0026ٷ݇\u0004A\u0010\u0004\r^�\u0012�[�M�=:��]y�/K\u0015�eɲ�Kvak\u000e\u000eF�f��*V}UER��%�������?�����\u0017k�i�}�J\u001f_\u0016��w��%tK|��\u0015��I�ځm���%\u001f�]N�[�Z{�װ��ᏹA��n������x\u001co\u0019�̆{P\f?V�n�n�bQ'YTU�J�Sv\u000e\u0010�)\u0014���\f��C��\fO��Xn�lk�x\u000f�\u0004��\u000ff|?1�2���d�K�^�?U���`uY'q\tZ�)�M\"?\u0018�����\f��Y���J��\u0010�m�y��S��\u001c\u001bL�B�*O�4�^�(�7\u001f��+�|��O��߉���'��Ѽ�ȳ�*�*Ɋ����\u0007sgX�k�a\"\u0014\u0015\u000ea�\u0026�4l\u001b�\u001b�N��\u0012\\��$F�*�q\u0015H��\u0002ߌ�ڑv�K�Ϳ�Ȼk̆tl|c{�ژI�7=�M��̽i-��\u001d_\u0012��\u0019�n�{3k�D+�qg��2\r\u0026��7�=.��fl��[h�M�c*�7 ��\f�'uԸ\u001a��78�ѳ���#���)\u001c���:!�jm�ov\u0000�AVQj��8vS@i��MdYDd!���\t'���\u001091^�\u0013\u001b�޺�\u0014w\u0007K\b��`\u0012��B�X�O�a����\u0000�\u001a-��Y\u0011�\rP�\r����\u001b�$Kh\u000b)@\u0018\u0004�v�!�\u001co\u001c�Zf�I\u0011�\u001d�\u001fmf\f!���:xFH\u000b�1��C=қ�v\u000b��\u000e�Y\u001b�f���UD�\t�%V\u0018\u0000��aT\u0016�;����nVG ��'mdR\u0010\u0002������\u001f�����3z��Z���]�th�z=\u00152X[�\u0015͹��D�����i�p�|suE;'l�sb��\u0001��Q�IYW��W?�������g\b�\u0004!�L�(I�\u0002?9��P��r�\f\u001f���=�4�2���B�\u001e\t]�R G���L����\" ��2\u0014\b淺k~v�W2)\n�u�\u0014�,�.:��0���'�\u000e�\u0010J|'Q��#��;�\u0026\t��;\u001a�D�X�R�'�H��N��LSu!r�\u0006\u0011R�\u0005��%\u0001�O�XRG\u0000Y\u0014�U\t\u0017�1t�f�\u001dE\u0006VDY�\t�˲H.����4�5\u0001k~o�u�\u000bp�ِ6hI2�@iP��.�8^r��ȱ\u0003�e`��A��H��\b[�i'�\u0007\u0010�2\u0013�VX\u0000^��)Q~�q]�Z\u0026I�\u0003�D��0�Q��ωt�\u001f��\u0015\u0012R�\nj]VLƀ��\u0026uU�\b�M'\u001c\f�UN�ܹ��#-J�k��\u000f Ҕ]�������d\u0018�\u001e�1U�\"KY��B�u���\u0011��*\u0011��;Fɿ��V�\n\n[This covers the key concepts - the full content includes additional details and examples]"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "wiki",
+          "community",
+          "wiki",
+          "documentation",
+          "guides"
+        ],
+        "section": "deep_dive",
+        "tags": [
+          "community",
+          "wiki",
+          "documentation",
+          "guides"
+        ],
+        "type": "detailed_explanation"
+      },
+      "source": {
+        "url": "https://github.com/golang/go/wiki",
+        "title": "Go Wiki",
+        "category": "Community Wiki",
+        "description": "Community-maintained Go documentation and guides",
+        "word_count": 426,
+        "quality_tier": "low"
+      },
+      "created_at": "2025-08-10T12:24:58Z"
+    },
+    {
+      "id": "go_wiki_practical_1754828700",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "How can I apply what's covered in Go Wiki to real Go programming? What are the practical applications?"
+        },
+        {
+          "role": "assistant",
+          "content": "The concepts in Go Wiki have several practical applications:\n\n• **Real-world Development**: Apply these patterns in production Go applications\n• **Code Quality**: Improve your code's readability, maintainability, and performance\n• **Best Practices**: Follow established Go community standards and conventions\n• **Problem Solving**: Use these techniques to solve common programming challenges\n• **Team Development**: Share these approaches with your development team"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "wiki",
+          "community",
+          "wiki",
+          "documentation",
+          "guides"
+        ],
+        "section": "applications",
+        "tags": [
+          "community",
+          "wiki",
+          "documentation",
+          "guides",
+          "practical",
+          "application",
+          "real-world"
+        ],
+        "type": "practical_applications"
+      },
+      "source": {
+        "url": "https://github.com/golang/go/wiki",
+        "title": "Go Wiki",
+        "category": "Community Wiki",
+        "description": "Community-maintained Go documentation and guides",
+        "word_count": 426,
+        "quality_tier": "low"
+      },
+      "created_at": "2025-08-10T12:24:58Z"
+    },
+    {
+      "id": "go_code_walks_intro_1754828698",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "I'm interested in learning about Go Code Walks. Can you tell me what this covers?"
+        },
+        {
+          "role": "assistant",
+          "content": "Great choice! Go Code Walks is guided tours through go programs and patterns.\n\nHere's what you'll find:\n\n\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0004\u0003�Y]o�6\u0016}��`\u0015�c#��w�\u0002]���6\t�\u0002q����]\u0004A��(�6%\n$5Zm�����ã���u�\u001a~�\u001f��e\u0016y��X�\u001d�].\n\u0011y�v�#\u0011��Ӄ�P���\u0019�\"�2\"�e)b��܈4�r�*{\u0012\u0004M�,2�3%\u001c�\n^�L�E�\u000b�cc#+�N\u000fӺ����a3O�v�����...\n\nThis content comes from Code Walks and covers essential concepts that will help you understand Go programming better."
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "code",
+          "walks",
+          "advanced",
+          "patterns",
+          "guided-tours",
+          "analysis"
+        ],
+        "section": "overview",
+        "tags": [
+          "advanced",
+          "patterns",
+          "guided-tours",
+          "analysis"
+        ],
+        "type": "topic_introduction"
+      },
+      "source": {
+        "url": "https://golang.org/doc/codewalk/",
+        "title": "Go Code Walks",
+        "category": "Code Walks",
+        "description": "Guided tours through Go programs and patterns",
+        "word_count": 83,
+        "quality_tier": "unknown"
+      },
+      "created_at": "2025-08-10T12:24:58Z"
+    },
+    {
+      "id": "go_code_walks_deepdive_1754828699",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you give me a detailed explanation of the concepts in Go Code Walks? I want to understand it thoroughly."
+        },
+        {
+          "role": "assistant",
+          "content": "Let me walk you through Go Code Walks in detail.\n\n\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0004\u0003�Y]o�6\u0016}��`\u0015�c#��w�\u0002]���6\t�\u0002q����]\u0004A��(�6%\n$5Zm�����ã���u�\u001a~�\u001f��e\u0016y��X�\u001d�].\n\u0011y�v�#\u0011��Ӄ�P���\u0019�\"�2\"�e)b��܈4�r�*{\u0012\u0004M�,2�3%\u001c�\n^�L�E�\u000b�cc#+�N\u000fӺ����a3O�v��������\u0018ѿ_~��qI\u000f�����ϳ�\u0015\u000b��q��\u0003�JѰW܉ãE\u0026܅,�4\u0017kQ��N���~=Z��ai���k�͔�~�^��\u001d��=�p�q\u000e]������A\b�扊�\u0017ь�x�[af/f_�h�\\��f��\u0005�m\u0019G��\u0002_��#��ݷ���pi_�\u0004���D-�E�\r�z�\u0013���\u0015�}+Rm����*%|��8����W�˲�\u0018lY}�ԅ]�\f�V�Tgg����)Զ=�\u0018w321�q�\u0026�\u0014\u000b���f�\"\u001cs�\u0014�\r��G ^ \u000e��\u0012�\u0017\\���\td\u0004�t\u0013�Ө��Im�$�F�fz��\f�\u0012�\u0018����* .L\"\u001as�t\n���藃�e��\u0005{��{�3ËB�\u0019{\u000br�\b\u0002R�M=�?'�A/���m@�Չ\u0001����Y�|�4vvY\u0011G��\\#\u001d�����VB�����=*cn����.\nn�8�le\\��5\u0011�\u0004T\u0018��1\\��e��\u0016�✤�\u0004\\�!\u001d�2\u0005܂u\f\u0018ḫZ\u0006�]Pa��1I�\u001eb7\u00172ˑ��=��iz��\\�%�\"մ'�.�r-�\\I%]{��$Aq\u0007�z#�pm\u0017e\u0004��v!�t\u0003�0ti}��w�@��0��Q�\u001ff���'�\\u2H2%�!�cdx��|�\u001c��l�\u000be�]a�\u001a����-H2.E�!��\\�i���MNaF9t\"�\u0015�{C�M?7\f���dg�JVd��8�*~c������mapx'�4*`WB}*L\u001e��V���\"(\u0001m�iV�\u0012�q9��g48��N�({F�/{�lje\u00003o3y��!�\f����jDt\u0010DSQO\u0004�#%o\u0011�މ�m�M��̛�)\u0011����'�~���k\n�Oy�峯��D����8zHV-�kt�v���ъP��*c�@�+���\u0018���\u000e�a����Gm�wʍ��'R���#\nF�v\b0\fLi�\u0006Q��Dć�K�z\fQy���_x[=C�\u0015ֲ���!\u000ep4�k�\u001d$b|d��'q\u001b���g�z��!\f�J׎��a�LX�x��\u000b��\u0018�\"�\rJ��H�8l�\u0007�GD�;��\u0000�ߡ��M\u0010�]�{\u001e_�M���5���\\�S���-�\u0007\u0000\u0000���\n\n[This covers the key concepts - the full content includes additional details and examples]"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "code",
+          "walks",
+          "advanced",
+          "patterns",
+          "guided-tours",
+          "analysis",
+          "map"
+        ],
+        "section": "deep_dive",
+        "tags": [
+          "advanced",
+          "patterns",
+          "guided-tours",
+          "analysis"
+        ],
+        "type": "detailed_explanation"
+      },
+      "source": {
+        "url": "https://golang.org/doc/codewalk/",
+        "title": "Go Code Walks",
+        "category": "Code Walks",
+        "description": "Guided tours through Go programs and patterns",
+        "word_count": 83,
+        "quality_tier": "unknown"
+      },
+      "created_at": "2025-08-10T12:24:58Z"
+    },
+    {
+      "id": "go_code_walks_practical_1754828700",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "How can I apply what's covered in Go Code Walks to real Go programming? What are the practical applications?"
+        },
+        {
+          "role": "assistant",
+          "content": "The concepts in Go Code Walks have several practical applications:\n\n• **Real-world Development**: Apply these patterns in production Go applications\n• **Code Quality**: Improve your code's readability, maintainability, and performance\n• **Best Practices**: Follow established Go community standards and conventions\n• **Problem Solving**: Use these techniques to solve common programming challenges\n• **Team Development**: Share these approaches with your development team"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "code",
+          "walks",
+          "advanced",
+          "patterns",
+          "guided-tours",
+          "analysis",
+          "map"
+        ],
+        "section": "applications",
+        "tags": [
+          "advanced",
+          "patterns",
+          "guided-tours",
+          "analysis",
+          "practical",
+          "application",
+          "real-world"
+        ],
+        "type": "practical_applications"
+      },
+      "source": {
+        "url": "https://golang.org/doc/codewalk/",
+        "title": "Go Code Walks",
+        "category": "Code Walks",
+        "description": "Guided tours through Go programs and patterns",
+        "word_count": 83,
+        "quality_tier": "unknown"
+      },
+      "created_at": "2025-08-10T12:24:58Z"
+    },
+    {
+      "id": "go_faq_extended_intro_1754828698",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "I'm interested in learning about Go FAQ Extended. Can you tell me what this covers?"
+        },
+        {
+          "role": "assistant",
+          "content": "Great choice! Go FAQ Extended is frequently asked questions about go programming.\n\nHere's what you'll find:\n\n\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0004\u0003�Y]o�6\u0016}��`\u0015�c#��w�\u0005Z�h�i��\u0005�lR��.� �H�D�\u0012U�\u001a�������h��\u001b799`�\u00105{Ν8F��x��\u000e#�\u001a �S\u00184��pΖW ��*\"\f�1�u\u0011���T��ܯ3\nGʵ#I�\u0000�Kꀺ���_ݎVf/eI\u0016˔S\\��Au\u0010�jZ����V�iTʶ��T��...\n\nThis content comes from FAQ and covers essential concepts that will help you understand Go programming better."
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "faq",
+          "extended",
+          "faq",
+          "questions",
+          "troubleshooting",
+          "community"
+        ],
+        "section": "overview",
+        "tags": [
+          "faq",
+          "questions",
+          "troubleshooting",
+          "community"
+        ],
+        "type": "topic_introduction"
+      },
+      "source": {
+        "url": "https://golang.org/doc/faq",
+        "title": "Go FAQ Extended",
+        "category": "FAQ",
+        "description": "Frequently asked questions about Go programming",
+        "word_count": 543,
+        "quality_tier": "low"
+      },
+      "created_at": "2025-08-10T12:24:58Z"
+    },
+    {
+      "id": "go_faq_extended_deepdive_1754828699",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you give me a detailed explanation of the concepts in Go FAQ Extended? I want to understand it thoroughly."
+        },
+        {
+          "role": "assistant",
+          "content": "Let me walk you through Go FAQ Extended in detail.\n\n\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0004\u0003�Y]o�6\u0016}��`\u0015�c#��w�\u0005Z�h�i��\u0005�lR��.� �H�D�\u0012U�\u001a�������h��\u001b799`�\u00105{Ν8F��x��\u000e#�\u001a �S\u00184��pΖW ��*\"\f�1�u\u0011���T��ܯ3\nGʵ#I�\u0000�Kꀺ���_ݎVf/eI\u0016˔S\\��Au\u0010�jZ����V�iTʶ��T���j$�\u0015)y��wN�lKn��G\u001e\u001b��O���N��f?�k�5�᧬���\u0017�#-��@\u001c��Jī\u0006�5�D[T����\u0004����\u00184PR[\\ٙ��C[�m�����G휷����\u0003��@�\u0011\u0005\u0003x;\u0004�\u0007�4@#)\n\u001f�$��ׅj\u001a�̶�\u001b��D\u0016����s]���\u0015�\u0018\u0016ᚗ���\fkX\u000b�]��������E����W�\u0013[\u0006�\u0015�%|�\u0003�\u0003p%p��е��6hïOD��iC\u0018���\u001c�t�x\u0011�\u001a���\u0017�?0`ET\u0019��q�\u001ap�\\�z�{D�[��Z��\u000f\fW�$��\"��\u0003�(��Ԑ\u0010���A\u0010k�G���ҶD���RR����2�n������mo.c����\u0011A\u001d���\u001dp�\u0013Z��\u0004��U���%��j_s5�\u0015}U�\u001d\u0000\u0000���[Mo�@\u0010�+Q��!�\u001f�r@H�CA\u0002ĵ�k��q��\u001f\r����ٵw��Ǝ���r�V�����k�=�?�Co��������kr\u0005���Z�7/x�\u0026_]7Y\u0006���_��\u0003L�#`\u0013?I֊�\u0026����GN��u���W\u0012�\u0019R\\�\u001d0�IP�\u0019H.\u0006�/�h�\u0026R�2\u0002\u0000\u000e�L�'FE1r�\\�\u0019�,��f�pt�=�ǻ�x�2�LA�iY���Z?�۝ζ�\u0000\u001a��4\u0003�Lu��\f������S�O6���\u001e�?,3�:\u001d���k$=�եI�a�1.OY�׽�a{�� �*��\u0003- �F���M\b��U���ɿp%��|��GWf\u0011��\"\u0026\u001f�Ω\u0006����a�32 M\u0001/\u0019P��i���?#!�|��\u0013ס\u0017t��c�(pv��\u0014��x/��8:k\u001a���\u0001�Z�Uԣ���\u001c_��/��=\u0006�\u0011�\u001f����Y@���J\u0012�зV;$\u0001��￡\u0016\u0014t��;�0�hDR�'�U�\u001d�P;�'�Ь�U\t\r\b�\u0015H[�m\bw\u0005\r�Մ,1�Ԗ�y�\u0000|nMk%��o���+\b\\�\n{jƲ��\"�\\�EV0qgD%\u0014㠟\u0016Jx�\u001az��z�q\u0014%e?5�\u000b\u0012y�$W����7Q��֥Hq���Jr|f�\u0001�@�P��y\u0012��u��.+�;�\u001e(H\n\n[This covers the key concepts - the full content includes additional details and examples]"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "faq",
+          "extended",
+          "faq",
+          "questions",
+          "troubleshooting",
+          "community"
+        ],
+        "section": "deep_dive",
+        "tags": [
+          "faq",
+          "questions",
+          "troubleshooting",
+          "community"
+        ],
+        "type": "detailed_explanation"
+      },
+      "source": {
+        "url": "https://golang.org/doc/faq",
+        "title": "Go FAQ Extended",
+        "category": "FAQ",
+        "description": "Frequently asked questions about Go programming",
+        "word_count": 543,
+        "quality_tier": "low"
+      },
+      "created_at": "2025-08-10T12:24:58Z"
+    },
+    {
+      "id": "go_faq_extended_practical_1754828700",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "How can I apply what's covered in Go FAQ Extended to real Go programming? What are the practical applications?"
+        },
+        {
+          "role": "assistant",
+          "content": "The concepts in Go FAQ Extended have several practical applications:\n\n• **Real-world Development**: Apply these patterns in production Go applications\n• **Code Quality**: Improve your code's readability, maintainability, and performance\n• **Best Practices**: Follow established Go community standards and conventions\n• **Problem Solving**: Use these techniques to solve common programming challenges\n• **Team Development**: Share these approaches with your development team"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "faq",
+          "extended",
+          "faq",
+          "questions",
+          "troubleshooting",
+          "community"
+        ],
+        "section": "applications",
+        "tags": [
+          "faq",
+          "questions",
+          "troubleshooting",
+          "community",
+          "practical",
+          "application",
+          "real-world"
+        ],
+        "type": "practical_applications"
+      },
+      "source": {
+        "url": "https://golang.org/doc/faq",
+        "title": "Go FAQ Extended",
+        "category": "FAQ",
+        "description": "Frequently asked questions about Go programming",
+        "word_count": 543,
+        "quality_tier": "low"
+      },
+      "created_at": "2025-08-10T12:24:58Z"
+    },
+    {
+      "id": "go_memory_model_intro_1754828698",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "I'm interested in learning about Go Memory Model. Can you tell me what this covers?"
+        },
+        {
+          "role": "assistant",
+          "content": "Great choice! Go Memory Model is specification of memory model and concurrent programming.\n\nHere's what you'll find:\n\n\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0004\u0003�Ymo۶\u0016��_�������m��\u0016[�\u00064�ݒ��(\nZ�$\u0026�(��uu���=G/�l'�RtA,\u001fb�:y�ߧ翽~�2�������E\u001az��X�\u001d�]\u0026r\u0011z�r�#\u0011�����B���\u0019�B�4\"�E!\"��̈$�2�J{\u0012\u0004u]�R�S%\u001cOs^�T�Y�s�c##Kǖ�IUDN�...\n\nThis content comes from Specification and covers essential concepts that will help you understand Go programming better."
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "memory",
+          "model",
+          "memory",
+          "concurrency",
+          "specification",
+          "advanced"
+        ],
+        "section": "overview",
+        "tags": [
+          "memory",
+          "concurrency",
+          "specification",
+          "advanced"
+        ],
+        "type": "topic_introduction"
+      },
+      "source": {
+        "url": "https://golang.org/ref/mem",
+        "title": "Go Memory Model",
+        "category": "Specification",
+        "description": "Specification of memory model and concurrent programming",
+        "word_count": 142,
+        "quality_tier": "unknown"
+      },
+      "created_at": "2025-08-10T12:24:58Z"
+    },
+    {
+      "id": "go_memory_model_deepdive_1754828699",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you give me a detailed explanation of the concepts in Go Memory Model? I want to understand it thoroughly."
+        },
+        {
+          "role": "assistant",
+          "content": "Let me walk you through Go Memory Model in detail.\n\n\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0004\u0003�Ymo۶\u0016��_�������m��\u0016[�\u00064�ݒ��(\nZ�$\u0026�(��uu���=G/�l'�RtA,\u001fb�:y�ߧ翽~�2�������E\u001az��X�\u001d�]\u0026r\u0011z�r�#\u0011�����B���\u0019�B�4\"�E!\"��̈$�2�J{\u0012\u0004u]�R�S%\u001cOs^�T�Y�s�c##Kǖ�IUDN�Ⱎ�S;USy�{�F�\r��\u001f�y;��YY����I���uܸ��\u0001c���3����,\u0015�\\�x���(�I+ya'\u001e��ܰ$�I乂3���6� \u001f.�\u0013\u0019C�|\u001c�y2+��Y�t,f��¸oE��8��\u0026Gs(��谖E����*ra:�\u0010�LG�M'/�O�_���ڧ�~�Q�QF\u001dIr\u0005�^P���]\u0004��q䙽�%Y,SN��_\u001b�\u0000a���.�\u0016��N�\u001e�\u0005է2�1���+\u000e.�\u0012�Ɯf9��\u0010�C\u0006D��\\o�\u0006�S�}کdc+\u0003�y���.\u0018bH?oln��w�G�Q�\u0004���׈|�Dζ�F���c�\u0014�S,���e����\u001ax�a�%k}���s��\u0016\u001c��C\\�xՀ�F�h~\nR���@}gUƠ�����μ�\u0011ڪl��:\u001e5mޒ\u001b��w��\u001d�G\u0014\f��\u0011�\u001f\u0018�\u0000��(|���\u000f_\u0017��\u0018��zkY���z�^\u001ba-{\u000en\u0018�\u0000G+���A,�G68?�)@\u001eo�@���6�jE;�F��C�l�׿�C����/M\u0014�v\u0006���8ظ�܄�ժ�@�Aĭ���b)�K�\b�=� ;�\u0004o\u0011���(f�U_\u000bl'�(�Ou�낕F�p��\b׼�\u0005�e�a-�w]\u0006\u0012.��:�\u0017���W�x/��\tl+@K��\u000e�O����7B�v�۠\r�\u0010�3�\ra�W�r,�5�E�j��\u0006_X���\u0015QePB�Ej�a�y�K�#��\u0001?���\u0017�\bT�.�(Y�+f�\u0016�V\r�E�+��@�EP��`��.���\u0003��[�C�\u00047E�\"1��/i�C+@7yd%�ɫ\n�\u0019?�PPK\u001eN\u0002�\b�ީ��\u0011\"������v�\u001a����\u0013�\u0003/�tR���n-��\u001dg��\n�M��Ӎ���m�w{U�åN\u0012\u0019�B�R\u0017�O�񓑭\u0012�m�}�lE��g��WTqH}\u001f���������F��ߴ\u0015\u0013��\u0002�t���j�V��\\UR�t��:q5�\u001b\u001f^�2�}��\u0014W�݆u��H�9�\n8�3%W\u0006��{��G�\b��F��\u000e��lKS��[�\u0018����h\u000bw�{X$�1c-\u0014.�P�mw/1D��珝\f{\n\n[This covers the key concepts - the full content includes additional details and examples]"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "memory",
+          "model",
+          "memory",
+          "concurrency",
+          "specification",
+          "advanced"
+        ],
+        "section": "deep_dive",
+        "tags": [
+          "memory",
+          "concurrency",
+          "specification",
+          "advanced"
+        ],
+        "type": "detailed_explanation"
+      },
+      "source": {
+        "url": "https://golang.org/ref/mem",
+        "title": "Go Memory Model",
+        "category": "Specification",
+        "description": "Specification of memory model and concurrent programming",
+        "word_count": 142,
+        "quality_tier": "unknown"
+      },
+      "created_at": "2025-08-10T12:24:58Z"
+    },
+    {
+      "id": "go_memory_model_practical_1754828700",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "How can I apply what's covered in Go Memory Model to real Go programming? What are the practical applications?"
+        },
+        {
+          "role": "assistant",
+          "content": "The concepts in Go Memory Model have several practical applications:\n\n• **Real-world Development**: Apply these patterns in production Go applications\n• **Code Quality**: Improve your code's readability, maintainability, and performance\n• **Best Practices**: Follow established Go community standards and conventions\n• **Problem Solving**: Use these techniques to solve common programming challenges\n• **Team Development**: Share these approaches with your development team"
+        }
+      ],
+      "metadata": {
+        "keywords": [
+          "memory",
+          "model",
+          "memory",
+          "concurrency",
+          "specification",
+          "advanced"
+        ],
+        "section": "applications",
+        "tags": [
+          "memory",
+          "concurrency",
+          "specification",
+          "advanced",
+          "practical",
+          "application",
+          "real-world"
+        ],
+        "type": "practical_applications"
+      },
+      "source": {
+        "url": "https://golang.org/ref/mem",
+        "title": "Go Memory Model",
+        "category": "Specification",
+        "description": "Specification of memory model and concurrent programming",
+        "word_count": 142,
+        "quality_tier": "unknown"
+      },
+      "created_at": "2025-08-10T12:24:58Z"
+    }
+  ],
+  "metadata": {
+    "name": "Comprehensive Go Programming Conversational Dataset",
+    "description": "Complete conversational Q\u0026A dataset combining official golang.org documentation and ethically scraped web content for comprehensive Go programming assistance",
+    "version": "2.0.0",
+    "total_items": 44,
+    "sources": "Official golang.org documentation + Ethically scraped Go community content (Go Wiki, FAQ, Memory Model, Code Walks)",
+    "purpose": "Comprehensive LLM training, fine-tuning, and production-ready Go programming conversational AI"
+  },
+  "generated_at": "2025-08-10T12:26:14Z"
+}

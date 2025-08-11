@@ -1,0 +1,24 @@
+examples-standalone/
+scripts-standalone/
+
+# Training data and scraped content
+training-content/
+data/
+temporal-dev.log
+*.log
+
+# Temporary and cache files
+temp/
+cache/
+.cache/
+*.tmp
+*.temp
+
+# Build artifacts
+dist/
+build/
+out/
+
+# OS files
+.DS_Store
+Thumbs.db

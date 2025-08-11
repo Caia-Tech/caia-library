@@ -1,0 +1,1 @@
+Git-native document intelligence system with cryptographic provenance. Built on Temporal workflows for reliable document processing with complete audit trails. Features parallel text extraction, embedding generation, and immutable storage via Git commits. Perfect for AI training data curation, legal document management, and any use case requiring provable data lineage.
